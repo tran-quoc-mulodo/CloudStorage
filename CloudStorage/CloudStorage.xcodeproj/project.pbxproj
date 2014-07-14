@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
+		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
+		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
+		89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */; };
+		89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C801973DEED000ABB30 /* CSMainTableCell.m */; };
+		89432C8D1973E006000ABB30 /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C8B1973E006000ABB30 /* CSLoginViewController.m */; };
+		89432C8E1973E006000ABB30 /* CSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C8C1973E006000ABB30 /* CSLoginViewController.xib */; };
+		89432C921973E5B7000ABB30 /* CSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C901973E5B7000ABB30 /* CSFirstViewController.m */; };
+		89432C931973E5B7000ABB30 /* CSFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C911973E5B7000ABB30 /* CSFirstViewController.xib */; };
+		89432C971973E62D000ABB30 /* CSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C951973E62D000ABB30 /* CSSecondViewController.m */; };
+		89432C981973E62D000ABB30 /* CSSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C961973E62D000ABB30 /* CSSecondViewController.xib */; };
+		89432C9C1973E6A9000ABB30 /* CSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */; };
+		89432C9D1973E6A9000ABB30 /* CSThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */; };
+		89432CA61973E6CC000ABB30 /* CSFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CA41973E6CC000ABB30 /* CSFiveViewController.m */; };
+		89432CA71973E6CC000ABB30 /* CSFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */; };
+		89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA81973E707000ABB30 /* CSMainTableCell.xib */; };
+		89432CAD1973E713000ABB30 /* CSFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CAB1973E713000ABB30 /* CSFourViewController.m */; };
+		89432CAE1973E713000ABB30 /* CSFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CAC1973E713000ABB30 /* CSFourViewController.xib */; };
+		89432CB21973E71E000ABB30 /* CSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CB01973E71E000ABB30 /* CSMainViewController.m */; };
+		89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CB11973E71E000ABB30 /* CSMainViewController.xib */; };
+		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
+		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
+		89432CB91973EAAC000ABB30 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB81973EAAC000ABB30 /* DropboxSDK.framework */; };
+		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
+		89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */; };
+		89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
+		89DEE1161973DB7E00E905A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE1141973DB7E00E905A5 /* InfoPlist.strings */; };
+		89DEE1181973DB7E00E905A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE1171973DB7E00E905A5 /* main.m */; };
+		89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */; };
+		89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE11D1973DB7E00E905A5 /* Images.xcassets */; };
+		89DEE1251973DB7E00E905A5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE1241973DB7E00E905A5 /* XCTest.framework */; };
+		89DEE1261973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
+		89DEE1271973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
+		89DEE12F1973DB7E00E905A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */; };
+		89DEE1311973DB7E00E905A5 /* CloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89DEE1281973DB7E00E905A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89DEE1001973DB7E00E905A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89DEE1071973DB7E00E905A5;
+			remoteInfo = CloudStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
+		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
+		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
+		89432C771973DE9B000ABB30 /* CSMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainTabViewController.h; path = Compoinents/CSMainTabViewController.h; sourceTree = "<group>"; };
+		89432C781973DE9B000ABB30 /* CSMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainTabViewController.m; path = Compoinents/CSMainTabViewController.m; sourceTree = "<group>"; };
+		89432C7A1973DEB7000ABB30 /* CSBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSBaseTableViewController.h; path = Compoinents/CSBaseTableViewController.h; sourceTree = "<group>"; };
+		89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSBaseTableViewController.m; path = Compoinents/CSBaseTableViewController.m; sourceTree = "<group>"; };
+		89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSBaseTableViewController.xib; path = Compoinents/CSBaseTableViewController.xib; sourceTree = "<group>"; };
+		89432C7F1973DEED000ABB30 /* CSMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainTableCell.h; path = Compoinents/CSMainTableCell.h; sourceTree = "<group>"; };
+		89432C801973DEED000ABB30 /* CSMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainTableCell.m; path = Compoinents/CSMainTableCell.m; sourceTree = "<group>"; };
+		89432C8A1973E006000ABB30 /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLoginViewController.h; path = ViewController/CSLoginViewController.h; sourceTree = "<group>"; };
+		89432C8B1973E006000ABB30 /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLoginViewController.m; path = ViewController/CSLoginViewController.m; sourceTree = "<group>"; };
+		89432C8C1973E006000ABB30 /* CSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLoginViewController.xib; path = ViewController/CSLoginViewController.xib; sourceTree = "<group>"; };
+		89432C8F1973E5B7000ABB30 /* CSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFirstViewController.h; path = FiveMainViewController/CSFirstViewController.h; sourceTree = "<group>"; };
+		89432C901973E5B7000ABB30 /* CSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFirstViewController.m; path = FiveMainViewController/CSFirstViewController.m; sourceTree = "<group>"; };
+		89432C911973E5B7000ABB30 /* CSFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFirstViewController.xib; path = FiveMainViewController/CSFirstViewController.xib; sourceTree = "<group>"; };
+		89432C941973E62D000ABB30 /* CSSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSecondViewController.h; path = FiveMainViewController/CSSecondViewController.h; sourceTree = "<group>"; };
+		89432C951973E62D000ABB30 /* CSSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSecondViewController.m; path = FiveMainViewController/CSSecondViewController.m; sourceTree = "<group>"; };
+		89432C961973E62D000ABB30 /* CSSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSSecondViewController.xib; path = FiveMainViewController/CSSecondViewController.xib; sourceTree = "<group>"; };
+		89432C991973E6A9000ABB30 /* CSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSThirdViewController.h; path = FiveMainViewController/CSThirdViewController.h; sourceTree = "<group>"; };
+		89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSThirdViewController.m; path = FiveMainViewController/CSThirdViewController.m; sourceTree = "<group>"; };
+		89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSThirdViewController.xib; path = FiveMainViewController/CSThirdViewController.xib; sourceTree = "<group>"; };
+		89432CA31973E6CC000ABB30 /* CSFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFiveViewController.h; path = FiveMainViewController/CSFiveViewController.h; sourceTree = "<group>"; };
+		89432CA41973E6CC000ABB30 /* CSFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFiveViewController.m; path = FiveMainViewController/CSFiveViewController.m; sourceTree = "<group>"; };
+		89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFiveViewController.xib; path = FiveMainViewController/CSFiveViewController.xib; sourceTree = "<group>"; };
+		89432CA81973E707000ABB30 /* CSMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainTableCell.xib; path = Compoinents/CSMainTableCell.xib; sourceTree = "<group>"; };
+		89432CAA1973E713000ABB30 /* CSFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFourViewController.h; path = FiveMainViewController/CSFourViewController.h; sourceTree = "<group>"; };
+		89432CAB1973E713000ABB30 /* CSFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFourViewController.m; path = FiveMainViewController/CSFourViewController.m; sourceTree = "<group>"; };
+		89432CAC1973E713000ABB30 /* CSFourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFourViewController.xib; path = FiveMainViewController/CSFourViewController.xib; sourceTree = "<group>"; };
+		89432CAF1973E71E000ABB30 /* CSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainViewController.h; path = ViewController/CSMainViewController.h; sourceTree = "<group>"; };
+		89432CB01973E71E000ABB30 /* CSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainViewController.m; path = ViewController/CSMainViewController.m; sourceTree = "<group>"; };
+		89432CB11973E71E000ABB30 /* CSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainViewController.xib; path = ViewController/CSMainViewController.xib; sourceTree = "<group>"; };
+		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		89432CB81973EAAC000ABB30 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89DEE10B1973DB7E00E905A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		89DEE10F1973DB7E00E905A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		89DEE1131973DB7E00E905A5 /* CloudStorage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudStorage-Info.plist"; sourceTree = "<group>"; };
+		89DEE1151973DB7E00E905A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89DEE1171973DB7E00E905A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89DEE1191973DB7E00E905A5 /* CloudStorage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudStorage-Prefix.pch"; sourceTree = "<group>"; };
+		89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		89DEE11D1973DB7E00E905A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		89DEE1231973DB7E00E905A5 /* CloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89DEE1241973DB7E00E905A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		89DEE12C1973DB7E00E905A5 /* CloudStorageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudStorageTests-Info.plist"; sourceTree = "<group>"; };
+		89DEE12E1973DB7E00E905A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudStorageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89DEE1051973DB7E00E905A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89432CB91973EAAC000ABB30 /* DropboxSDK.framework in Frameworks */,
+				89432CB71973EA97000ABB30 /* Security.framework in Frameworks */,
+				89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */,
+				89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */,
+				89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */,
+				89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89DEE1201973DB7E00E905A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DEE1251973DB7E00E905A5 /* XCTest.framework in Frameworks */,
+				89DEE1271973DB7E00E905A5 /* UIKit.framework in Frameworks */,
+				89DEE1261973DB7E00E905A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89432C671973DD28000ABB30 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89432CAF1973E71E000ABB30 /* CSMainViewController.h */,
+				89432CB01973E71E000ABB30 /* CSMainViewController.m */,
+				89432CB11973E71E000ABB30 /* CSMainViewController.xib */,
+				89432C8A1973E006000ABB30 /* CSLoginViewController.h */,
+				89432C8B1973E006000ABB30 /* CSLoginViewController.m */,
+				89432C8C1973E006000ABB30 /* CSLoginViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		89432C681973DD57000ABB30 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		89432C691973DD66000ABB30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		89432C6A1973DD72000ABB30 /* Compoinents */ = {
+			isa = PBXGroup;
+			children = (
+				89432C7A1973DEB7000ABB30 /* CSBaseTableViewController.h */,
+				89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */,
+				89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */,
+				89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */,
+				89432C701973DE3D000ABB30 /* CSMainNavigationController.m */,
+				89432C7F1973DEED000ABB30 /* CSMainTableCell.h */,
+				89432C801973DEED000ABB30 /* CSMainTableCell.m */,
+				89432CA81973E707000ABB30 /* CSMainTableCell.xib */,
+				89432C771973DE9B000ABB30 /* CSMainTabViewController.h */,
+				89432C781973DE9B000ABB30 /* CSMainTabViewController.m */,
+			);
+			name = Compoinents;
+			sourceTree = "<group>";
+		};
+		89432C6B1973DD83000ABB30 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				89432C6C1973DDC4000ABB30 /* CSConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		89432C841973DF4D000ABB30 /* FiveMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89432CAA1973E713000ABB30 /* CSFourViewController.h */,
+				89432CAB1973E713000ABB30 /* CSFourViewController.m */,
+				89432CAC1973E713000ABB30 /* CSFourViewController.xib */,
+				89432C8F1973E5B7000ABB30 /* CSFirstViewController.h */,
+				89432C901973E5B7000ABB30 /* CSFirstViewController.m */,
+				89432C911973E5B7000ABB30 /* CSFirstViewController.xib */,
+				89432C941973E62D000ABB30 /* CSSecondViewController.h */,
+				89432C951973E62D000ABB30 /* CSSecondViewController.m */,
+				89432C961973E62D000ABB30 /* CSSecondViewController.xib */,
+				89432C991973E6A9000ABB30 /* CSThirdViewController.h */,
+				89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */,
+				89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */,
+				89432CA31973E6CC000ABB30 /* CSFiveViewController.h */,
+				89432CA41973E6CC000ABB30 /* CSFiveViewController.m */,
+				89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */,
+			);
+			name = FiveMainViewController;
+			sourceTree = "<group>";
+		};
+		89DEE0FF1973DB7E00E905A5 = {
+			isa = PBXGroup;
+			children = (
+				89DEE1111973DB7E00E905A5 /* CloudStorage */,
+				89DEE12A1973DB7E00E905A5 /* CloudStorageTests */,
+				89DEE10A1973DB7E00E905A5 /* Frameworks */,
+				89DEE1091973DB7E00E905A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89DEE1091973DB7E00E905A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89DEE1081973DB7E00E905A5 /* CloudStorage.app */,
+				89DEE1231973DB7E00E905A5 /* CloudStorageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89DEE10A1973DB7E00E905A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89432CB81973EAAC000ABB30 /* DropboxSDK.framework */,
+				89432CB61973EA97000ABB30 /* Security.framework */,
+				89432CB41973EA87000ABB30 /* CoreData.framework */,
+				89DEE10B1973DB7E00E905A5 /* Foundation.framework */,
+				89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */,
+				89DEE10F1973DB7E00E905A5 /* UIKit.framework */,
+				89DEE1241973DB7E00E905A5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89DEE1111973DB7E00E905A5 /* CloudStorage */ = {
+			isa = PBXGroup;
+			children = (
+				89432C6B1973DD83000ABB30 /* Constants */,
+				89432C6A1973DD72000ABB30 /* Compoinents */,
+				89432C691973DD66000ABB30 /* Models */,
+				89432C681973DD57000ABB30 /* Libraries */,
+				89432C841973DF4D000ABB30 /* FiveMainViewController */,
+				89432C671973DD28000ABB30 /* ViewController */,
+				89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */,
+				89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */,
+				89DEE1121973DB7E00E905A5 /* Supporting Files */,
+			);
+			path = CloudStorage;
+			sourceTree = "<group>";
+		};
+		89DEE1121973DB7E00E905A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89DEE11D1973DB7E00E905A5 /* Images.xcassets */,
+				89DEE1131973DB7E00E905A5 /* CloudStorage-Info.plist */,
+				89DEE1141973DB7E00E905A5 /* InfoPlist.strings */,
+				89DEE1171973DB7E00E905A5 /* main.m */,
+				89DEE1191973DB7E00E905A5 /* CloudStorage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89DEE12A1973DB7E00E905A5 /* CloudStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */,
+				89DEE12B1973DB7E00E905A5 /* Supporting Files */,
+			);
+			path = CloudStorageTests;
+			sourceTree = "<group>";
+		};
+		89DEE12B1973DB7E00E905A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89DEE12C1973DB7E00E905A5 /* CloudStorageTests-Info.plist */,
+				89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89DEE1071973DB7E00E905A5 /* CloudStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89DEE1341973DB7E00E905A5 /* Build configuration list for PBXNativeTarget "CloudStorage" */;
+			buildPhases = (
+				89DEE1041973DB7E00E905A5 /* Sources */,
+				89DEE1051973DB7E00E905A5 /* Frameworks */,
+				89DEE1061973DB7E00E905A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudStorage;
+			productName = CloudStorage;
+			productReference = 89DEE1081973DB7E00E905A5 /* CloudStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89DEE1221973DB7E00E905A5 /* CloudStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89DEE1371973DB7E00E905A5 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */;
+			buildPhases = (
+				89DEE11F1973DB7E00E905A5 /* Sources */,
+				89DEE1201973DB7E00E905A5 /* Frameworks */,
+				89DEE1211973DB7E00E905A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89DEE1291973DB7E00E905A5 /* PBXTargetDependency */,
+			);
+			name = CloudStorageTests;
+			productName = CloudStorageTests;
+			productReference = 89DEE1231973DB7E00E905A5 /* CloudStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89DEE1001973DB7E00E905A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = anhquoc;
+				TargetAttributes = {
+					89DEE1221973DB7E00E905A5 = {
+						TestTargetID = 89DEE1071973DB7E00E905A5;
+					};
+				};
+			};
+			buildConfigurationList = 89DEE1031973DB7E00E905A5 /* Build configuration list for PBXProject "CloudStorage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89DEE0FF1973DB7E00E905A5;
+			productRefGroup = 89DEE1091973DB7E00E905A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89DEE1071973DB7E00E905A5 /* CloudStorage */,
+				89DEE1221973DB7E00E905A5 /* CloudStorageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89DEE1061973DB7E00E905A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */,
+				89432C9D1973E6A9000ABB30 /* CSThirdViewController.xib in Resources */,
+				89432C8E1973E006000ABB30 /* CSLoginViewController.xib in Resources */,
+				89DEE1161973DB7E00E905A5 /* InfoPlist.strings in Resources */,
+				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
+				89432C981973E62D000ABB30 /* CSSecondViewController.xib in Resources */,
+				89432C931973E5B7000ABB30 /* CSFirstViewController.xib in Resources */,
+				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
+				89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */,
+				89432CAE1973E713000ABB30 /* CSFourViewController.xib in Resources */,
+				89432CA71973E6CC000ABB30 /* CSFiveViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89DEE1211973DB7E00E905A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DEE12F1973DB7E00E905A5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89DEE1041973DB7E00E905A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89432C9C1973E6A9000ABB30 /* CSThirdViewController.m in Sources */,
+				89432C921973E5B7000ABB30 /* CSFirstViewController.m in Sources */,
+				89432C8D1973E006000ABB30 /* CSLoginViewController.m in Sources */,
+				89432C971973E62D000ABB30 /* CSSecondViewController.m in Sources */,
+				89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */,
+				89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */,
+				89432CAD1973E713000ABB30 /* CSFourViewController.m in Sources */,
+				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
+				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
+				89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */,
+				89432CA61973E6CC000ABB30 /* CSFiveViewController.m in Sources */,
+				89432CB21973E71E000ABB30 /* CSMainViewController.m in Sources */,
+				89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89DEE11F1973DB7E00E905A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DEE1311973DB7E00E905A5 /* CloudStorageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89DEE1291973DB7E00E905A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89DEE1071973DB7E00E905A5 /* CloudStorage */;
+			targetProxy = 89DEE1281973DB7E00E905A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89DEE1141973DB7E00E905A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89DEE1151973DB7E00E905A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89DEE12E1973DB7E00E905A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89DEE1321973DB7E00E905A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89DEE1331973DB7E00E905A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89DEE1351973DB7E00E905A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/luongcamminh/Documents/Project\\ iOS/TestiOS/CloudStorage",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
+				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		89DEE1361973DB7E00E905A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/luongcamminh/Documents/Project\\ iOS/TestiOS/CloudStorage",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
+				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		89DEE1381973DB7E00E905A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CloudStorageTests/CloudStorageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		89DEE1391973DB7E00E905A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
+				INFOPLIST_FILE = "CloudStorageTests/CloudStorageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89DEE1031973DB7E00E905A5 /* Build configuration list for PBXProject "CloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89DEE1321973DB7E00E905A5 /* Debug */,
+				89DEE1331973DB7E00E905A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89DEE1341973DB7E00E905A5 /* Build configuration list for PBXNativeTarget "CloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89DEE1351973DB7E00E905A5 /* Debug */,
+				89DEE1361973DB7E00E905A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89DEE1371973DB7E00E905A5 /* Build configuration list for PBXNativeTarget "CloudStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89DEE1381973DB7E00E905A5 /* Debug */,
+				89DEE1391973DB7E00E905A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89DEE1001973DB7E00E905A5 /* Project object */;
+}
