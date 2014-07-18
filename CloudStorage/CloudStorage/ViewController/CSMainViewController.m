@@ -7,12 +7,6 @@
 //
 
 #import "CSMainViewController.h"
-#import "CSFirstViewController.h"
-#import "CSSecondViewController.h"
-#import "CSMainNavigationController.h"
-#import "CSThirdViewController.h"
-#import "CSFourViewController.h"
-#import "CSFiveViewController.h"
 
 @interface CSMainViewController ()
 
@@ -33,29 +27,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CSFirstViewController *controller1 = [[CSFirstViewController alloc] initWithNibName:@"CSFirstViewController" bundle:nil];
-    [controller1 setTitle:@"Dropbox"];
-    CSSecondViewController *controller2 = [[CSSecondViewController alloc] initWithNibName:@"CSSecondViewController" bundle:nil];
-    [controller2 setTitle:@"Google Drive"];
-    CSThirdViewController *controller3 = [[CSThirdViewController alloc] initWithNibName:@"CSThirdViewController" bundle:nil];
-    [controller3 setTitle:@"Sky Drive"];
-    CSFourViewController *controller4 = [[CSFourViewController alloc] initWithNibName:@"CSFourViewController" bundle:nil];
-    [controller4 setTitle:@"Sugar Sync"];
-    CSFiveViewController *controller5 = [[CSFiveViewController alloc] initWithNibName:@"CSFiveViewController" bundle:nil];
-    [controller5 setTitle:@"Settings"];
+    [self createGUI];
+}
+
+- (void)createGUI {
+    [[[self.viewControllers objectAtIndex:0] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-dropbox-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-dropbox-default.png"]];
     
-    CSMainNavigationController *navigation1 = [[CSMainNavigationController alloc] initWithRootViewController:controller1];
+    [[[self.viewControllers objectAtIndex:2] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-googledrive-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-googledrive-default.png"]];
     
-    CSMainNavigationController *navigation2 = [[CSMainNavigationController alloc] initWithRootViewController:controller2];
+    [[[self.viewControllers objectAtIndex:3] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-sky-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-sky-default.png"]];
     
-    CSMainNavigationController *navigation3 = [[CSMainNavigationController alloc] initWithRootViewController:controller3];
-    
-    CSMainNavigationController *navigation4 = [[CSMainNavigationController alloc] initWithRootViewController:controller4];
-    
-    CSMainNavigationController *navigation5 = [[CSMainNavigationController alloc] initWithRootViewController:controller5];
-    
-    
-    self.viewControllers = [NSArray arrayWithObjects:navigation1, navigation2, navigation3, navigation4, navigation5, nil];
+    [[[self.viewControllers objectAtIndex:4] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-settings-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-settings-default.png"]];
 }
 
 - (BOOL)shouldAutorotate {

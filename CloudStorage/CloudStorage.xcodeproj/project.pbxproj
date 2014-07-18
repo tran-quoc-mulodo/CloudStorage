@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89057070197816630091B3C5 /* tabbar-dropbox-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */; };
+		89057078197837220091B3C5 /* tabbar-dropbox-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89057077197837220091B3C5 /* tabbar-dropbox-default.png */; };
+		8905707A197837540091B3C5 /* tabbar-googledrive-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */; };
+		8905707C197837720091B3C5 /* tabbar-googledrive-seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */; };
+		8905707E197838C50091B3C5 /* tabbar-googledrive-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */; };
+		89057080197838CA0091B3C5 /* tabbar-googledrive-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */; };
+		8905708619783CE30091B3C5 /* tabbar-sky-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */; };
+		8905708819783CE80091B3C5 /* tabbar-sky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708719783CE80091B3C5 /* tabbar-sky-selected.png */; };
+		8905708A19783D660091B3C5 /* tabbar-sky-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */; };
+		8905708C19783D6B0091B3C5 /* tabbar-sky-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */; };
+		89280A271974C38800A2097B /* tabbar-dropbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89280A261974C38800A2097B /* tabbar-dropbox-selected.png */; };
 		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
 		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
@@ -29,7 +40,11 @@
 		89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CB11973E71E000ABB30 /* CSMainViewController.xib */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
-		89432CB91973EAAC000ABB30 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB81973EAAC000ABB30 /* DropboxSDK.framework */; };
+		89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */; };
+		89CC316B19745DBA00A9044C /* tabbar-settings-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316919745DBA00A9044C /* tabbar-settings-default.png */; };
+		89CC316C19745DBA00A9044C /* tabbar-settings-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */; };
+		89CC316F19745DCD00A9044C /* tabbar-settings-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */; };
+		89CC317019745DCD00A9044C /* tabbar-settings-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */; };
 		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
 		89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */; };
 		89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
@@ -55,6 +70,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default@2x.png"; sourceTree = "<group>"; };
+		89057077197837220091B3C5 /* tabbar-dropbox-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default.png"; sourceTree = "<group>"; };
+		89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-selected@2x.png"; sourceTree = "<group>"; };
+		8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-seleted.png"; sourceTree = "<group>"; };
+		8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default@2x.png"; sourceTree = "<group>"; };
+		8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default.png"; sourceTree = "<group>"; };
+		8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected@2x.png"; sourceTree = "<group>"; };
+		8905708719783CE80091B3C5 /* tabbar-sky-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected.png"; sourceTree = "<group>"; };
+		8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default@2x.png"; sourceTree = "<group>"; };
+		8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default.png"; sourceTree = "<group>"; };
+		89280A261974C38800A2097B /* tabbar-dropbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-selected.png"; sourceTree = "<group>"; };
 		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
 		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
 		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
@@ -89,7 +115,11 @@
 		89432CB11973E71E000ABB30 /* CSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainViewController.xib; path = ViewController/CSMainViewController.xib; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		89432CB81973EAAC000ABB30 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected@2x.png"; path = "Images/Retina/tabbar-dropbox-selected@2x.png"; sourceTree = "<group>"; };
+		89CC316919745DBA00A9044C /* tabbar-settings-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default.png"; sourceTree = "<group>"; };
+		89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected.png"; sourceTree = "<group>"; };
+		89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default@2x.png"; sourceTree = "<group>"; };
+		89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected@2x.png"; sourceTree = "<group>"; };
 		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEE10B1973DB7E00E905A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,7 +143,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89432CB91973EAAC000ABB30 /* DropboxSDK.framework in Frameworks */,
 				89432CB71973EA97000ABB30 /* Security.framework in Frameworks */,
 				89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */,
 				89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */,
@@ -209,6 +238,45 @@
 			name = FiveMainViewController;
 			sourceTree = "<group>";
 		};
+		89CC315F197458E700A9044C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				89CC316319745C8500A9044C /* Retina */,
+				89CC316219745C7000A9044C /* NonRetina */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		89CC316219745C7000A9044C /* NonRetina */ = {
+			isa = PBXGroup;
+			children = (
+				89057077197837220091B3C5 /* tabbar-dropbox-default.png */,
+				8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */,
+				8905708719783CE80091B3C5 /* tabbar-sky-selected.png */,
+				8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */,
+				8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */,
+				89280A261974C38800A2097B /* tabbar-dropbox-selected.png */,
+				89CC316919745DBA00A9044C /* tabbar-settings-default.png */,
+				89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */,
+			);
+			name = NonRetina;
+			sourceTree = "<group>";
+		};
+		89CC316319745C8500A9044C /* Retina */ = {
+			isa = PBXGroup;
+			children = (
+				89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */,
+				8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */,
+				8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */,
+				8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */,
+				8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */,
+				89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */,
+				89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */,
+				89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */,
+			);
+			name = Retina;
+			sourceTree = "<group>";
+		};
 		89DEE0FF1973DB7E00E905A5 = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +299,6 @@
 		89DEE10A1973DB7E00E905A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				89432CB81973EAAC000ABB30 /* DropboxSDK.framework */,
 				89432CB61973EA97000ABB30 /* Security.framework */,
 				89432CB41973EA87000ABB30 /* CoreData.framework */,
 				89DEE10B1973DB7E00E905A5 /* Foundation.framework */,
@@ -261,6 +328,7 @@
 		89DEE1121973DB7E00E905A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89CC315F197458E700A9044C /* Images */,
 				89DEE11D1973DB7E00E905A5 /* Images.xcassets */,
 				89DEE1131973DB7E00E905A5 /* CloudStorage-Info.plist */,
 				89DEE1141973DB7E00E905A5 /* InfoPlist.strings */,
@@ -364,16 +432,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89280A271974C38800A2097B /* tabbar-dropbox-selected.png in Resources */,
 				89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */,
+				89CC316C19745DBA00A9044C /* tabbar-settings-selected.png in Resources */,
+				89CC316B19745DBA00A9044C /* tabbar-settings-default.png in Resources */,
 				89432C9D1973E6A9000ABB30 /* CSThirdViewController.xib in Resources */,
+				8905708619783CE30091B3C5 /* tabbar-sky-selected@2x.png in Resources */,
 				89432C8E1973E006000ABB30 /* CSLoginViewController.xib in Resources */,
+				89057080197838CA0091B3C5 /* tabbar-googledrive-default.png in Resources */,
 				89DEE1161973DB7E00E905A5 /* InfoPlist.strings in Resources */,
+				8905707C197837720091B3C5 /* tabbar-googledrive-seleted.png in Resources */,
+				8905707E197838C50091B3C5 /* tabbar-googledrive-default@2x.png in Resources */,
+				89CC316F19745DCD00A9044C /* tabbar-settings-default@2x.png in Resources */,
+				8905708C19783D6B0091B3C5 /* tabbar-sky-default.png in Resources */,
 				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
 				89432C981973E62D000ABB30 /* CSSecondViewController.xib in Resources */,
+				8905708819783CE80091B3C5 /* tabbar-sky-selected.png in Resources */,
 				89432C931973E5B7000ABB30 /* CSFirstViewController.xib in Resources */,
+				89CC317019745DCD00A9044C /* tabbar-settings-selected@2x.png in Resources */,
 				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
 				89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */,
 				89432CAE1973E713000ABB30 /* CSFourViewController.xib in Resources */,
+				8905707A197837540091B3C5 /* tabbar-googledrive-selected@2x.png in Resources */,
+				89057070197816630091B3C5 /* tabbar-dropbox-default@2x.png in Resources */,
+				89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */,
+				89057078197837220091B3C5 /* tabbar-dropbox-default.png in Resources */,
+				8905708A19783D660091B3C5 /* tabbar-sky-default@2x.png in Resources */,
 				89432CA71973E6CC000ABB30 /* CSFiveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +610,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/luongcamminh/Documents/Project\\ iOS/TestiOS/CloudStorage",
+					/Users/luongcamminh/Documents/ProjectiOS/TestiOS/CloudStorage,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
@@ -544,7 +628,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/luongcamminh/Documents/Project\\ iOS/TestiOS/CloudStorage",
+					/Users/luongcamminh/Documents/ProjectiOS/TestiOS/CloudStorage,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
