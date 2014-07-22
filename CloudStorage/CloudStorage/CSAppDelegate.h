@@ -11,7 +11,9 @@
 @class CSMainViewController;
 @class CSLoginViewController;
 
-@interface CSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CSAppDelegate : UIResponder <UIApplicationDelegate> {
+    NSString *relinkUserId;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) CSMainViewController *mainController;

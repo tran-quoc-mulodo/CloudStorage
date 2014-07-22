@@ -6,8 +6,14 @@
 //  Copyright (c) 2014 anhquoc. All rights reserved.
 //
 
+@class DBRestClient;
+
 #import <UIKit/UIKit.h>
 
-@interface CSFirstViewController : UIViewController
+@interface CSFirstViewController : UIViewController {
+    DBRestClient* restClient;
+}
+
+- (void)actionWhenDidLinkToDrobox;
 
 @end

@@ -9,21 +9,44 @@
 #import "CSAppDelegate.h"
 #import "CSMainViewController.h"
 #import "CSLoginViewController.h"
+#import <DropboxSDK/DropboxSDK.h>
+
+@interface CSAppDelegate () <DBSessionDelegate, DBNetworkRequestDelegate>
+
+@end
 
 @implementation CSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    DBSession *dbSession = [[DBSession alloc] initWithAppKey:kCSDroboxAppKey
+                                                   appSecret:kCSDroboxAppSecret
+                                                        root:kDBRootDropbox];
+    [DBSession setSharedSession:dbSession];
+    [DBRequest setNetworkRequestDelegate:self];
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
     self.loginCotroller = [[CSLoginViewController alloc] initWithNibName:@"CSLoginViewController" bundle:nil];
     
     [self.window setRootViewController:_loginCotroller];
-    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	if ([[DBSession sharedSession] handleOpenURL:url]) {
+		if ([[DBSession sharedSession] isLinked]) {
+            // link to account dropbox successfull
+            [_mainController.controller1 actionWhenDidLinkToDrobox];
+		}
+		return YES;
+	}
+	
+	return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -54,6 +77,7 @@
 }
 
 #pragma mark - Function Login
+
 - (void)changeRootViewController:(NSInteger)config {
     [UIView beginAnimations:@"FlipFromLeft" context:nil];
     [UIView setAnimationDuration:1.0];
@@ -69,6 +93,47 @@
     } else {
         [self.window setRootViewController:_loginCotroller];
     }
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)index {
+	if (index != alertView.cancelButtonIndex) {
+		[[DBSession sharedSession] linkUserId:relinkUserId fromController:_mainController.controller1];
+	}
+	relinkUserId = nil;
+}
+
+#pragma mark -
+#pragma mark DBSessionDelegate methods
+
+- (void)sessionDidReceiveAuthorizationFailure:(DBSession*)session userId:(NSString *)userId {
+	relinkUserId = [NSString stringWithFormat:@"%@", userId];
+	[[[UIAlertView alloc] initWithTitle:kCSDroboxSessionTitle
+                                message:kCSDroboxSessionMessage
+                               delegate:self
+                      cancelButtonTitle:kCSTitleCancel
+                      otherButtonTitles:kCSDroboxSessionRelink, nil] show];
+}
+
+#pragma mark -
+#pragma mark DBNetworkRequestDelegate methods
+
+static int outstandingRequests;
+
+- (void)networkRequestStarted {
+	outstandingRequests++;
+	if (outstandingRequests == 1) {
+		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+	}
+}
+
+- (void)networkRequestStopped {
+	outstandingRequests--;
+	if (outstandingRequests == 0) {
+		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+	}
 }
 
 @end

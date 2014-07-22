@@ -23,21 +23,9 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7) {
-        // iOS 7 or newer
-        [self.navigationBar setBarTintColor:kCSNavigationBackgroundColor];
-    } else {
-        // iOS 6 or older
-        [[UINavigationBar appearance] setTintColor:kCSNavigationBackgroundColor];
-    }
-    
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIColor whiteColor], UITextAttributeTextColor,
-                                                          nil]];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle{
