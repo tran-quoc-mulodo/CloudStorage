@@ -33,6 +33,8 @@
 - (void)createGUI {
     [[[self.viewControllers objectAtIndex:0] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-dropbox-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-dropbox-default.png"]];
     
+    [[[self.viewControllers objectAtIndex:1] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-box-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-box-default.png"]];
+    
     [[[self.viewControllers objectAtIndex:2] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-googledrive-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-googledrive-default.png"]];
     
     [[[self.viewControllers objectAtIndex:3] tabBarItem] setFinishedSelectedImage:[UIImage imageNamed:@"tabbar-sky-selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"tabbar-sky-default.png"]];
