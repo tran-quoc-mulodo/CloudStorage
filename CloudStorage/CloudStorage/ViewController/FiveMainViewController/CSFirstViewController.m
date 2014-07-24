@@ -29,6 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
     
 }
 
@@ -42,7 +45,7 @@
     if (![[DBSession sharedSession] isLinked]) {
 		[[DBSession sharedSession] linkFromController:self];
     } else {
-        
+        [[DBSession sharedSession] unlinkAll];
     }
 }
 

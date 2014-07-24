@@ -31,6 +31,7 @@
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7) {
         // iOS 7 or newer
         [[UINavigationBar appearance] setBarTintColor:kCSNavigationBackgroundColor];
+        [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     } else {
         // iOS 6 or older
         [[UINavigationBar appearance] setTintColor:kCSNavigationBackgroundColor];
@@ -39,7 +40,6 @@
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                           [UIColor whiteColor], UITextAttributeTextColor,
                                                           nil]];
-    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     
     _controller1 = [[CSFirstViewController alloc] initWithNibName:@"CSFirstViewController" bundle:nil];
     [_controller1 setTitle:@"Dropbox"];

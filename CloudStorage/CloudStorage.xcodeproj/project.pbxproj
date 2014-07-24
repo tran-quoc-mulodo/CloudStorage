@@ -7,49 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		89057070197816630091B3C5 /* tabbar-dropbox-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */; };
-		89057078197837220091B3C5 /* tabbar-dropbox-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89057077197837220091B3C5 /* tabbar-dropbox-default.png */; };
-		8905707A197837540091B3C5 /* tabbar-googledrive-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */; };
-		8905707C197837720091B3C5 /* tabbar-googledrive-seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */; };
-		8905707E197838C50091B3C5 /* tabbar-googledrive-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */; };
-		89057080197838CA0091B3C5 /* tabbar-googledrive-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */; };
-		8905708619783CE30091B3C5 /* tabbar-sky-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */; };
-		8905708819783CE80091B3C5 /* tabbar-sky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708719783CE80091B3C5 /* tabbar-sky-selected.png */; };
-		8905708A19783D660091B3C5 /* tabbar-sky-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */; };
-		8905708C19783D6B0091B3C5 /* tabbar-sky-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */; };
-		89280A271974C38800A2097B /* tabbar-dropbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89280A261974C38800A2097B /* tabbar-dropbox-selected.png */; };
 		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
 		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
 		89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */; };
 		89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C801973DEED000ABB30 /* CSMainTableCell.m */; };
-		89432C8D1973E006000ABB30 /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C8B1973E006000ABB30 /* CSLoginViewController.m */; };
-		89432C8E1973E006000ABB30 /* CSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C8C1973E006000ABB30 /* CSLoginViewController.xib */; };
-		89432C921973E5B7000ABB30 /* CSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C901973E5B7000ABB30 /* CSFirstViewController.m */; };
-		89432C931973E5B7000ABB30 /* CSFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C911973E5B7000ABB30 /* CSFirstViewController.xib */; };
-		89432C971973E62D000ABB30 /* CSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C951973E62D000ABB30 /* CSSecondViewController.m */; };
-		89432C981973E62D000ABB30 /* CSSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C961973E62D000ABB30 /* CSSecondViewController.xib */; };
-		89432C9C1973E6A9000ABB30 /* CSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */; };
-		89432C9D1973E6A9000ABB30 /* CSThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */; };
-		89432CA61973E6CC000ABB30 /* CSFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CA41973E6CC000ABB30 /* CSFiveViewController.m */; };
-		89432CA71973E6CC000ABB30 /* CSFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */; };
 		89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA81973E707000ABB30 /* CSMainTableCell.xib */; };
-		89432CAD1973E713000ABB30 /* CSFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CAB1973E713000ABB30 /* CSFourViewController.m */; };
-		89432CAE1973E713000ABB30 /* CSFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CAC1973E713000ABB30 /* CSFourViewController.xib */; };
-		89432CB21973E71E000ABB30 /* CSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432CB01973E71E000ABB30 /* CSMainViewController.m */; };
-		89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CB11973E71E000ABB30 /* CSMainViewController.xib */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
-		89A2FF6E197D8C3D0010DCA1 /* tabbar-box-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A2FF6D197D8C3D0010DCA1 /* tabbar-box-selected.png */; };
-		89A2FF70197D8C420010DCA1 /* tabbar-box-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A2FF6F197D8C420010DCA1 /* tabbar-box-selected@2x.png */; };
-		89A2FF72197D8C970010DCA1 /* tabbar-box-default.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A2FF71197D8C970010DCA1 /* tabbar-box-default.png.png */; };
-		89A2FF74197D8C9C0010DCA1 /* tabbar-box-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89A2FF73197D8C9C0010DCA1 /* tabbar-box-default@2x.png */; };
+		898CF36E19811610009A2E3A /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 898CF36D19811610009A2E3A /* welcome-branding@2x.png */; };
+		898CF37019811619009A2E3A /* welcome-branding.png in Resources */ = {isa = PBXBuildFile; fileRef = 898CF36F19811619009A2E3A /* welcome-branding.png */; };
 		89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1F039197E9D55007A695B /* DropboxSDK.framework */; };
 		89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */; };
-		89CC316B19745DBA00A9044C /* tabbar-settings-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316919745DBA00A9044C /* tabbar-settings-default.png */; };
-		89CC316C19745DBA00A9044C /* tabbar-settings-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */; };
-		89CC316F19745DCD00A9044C /* tabbar-settings-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */; };
-		89CC317019745DCD00A9044C /* tabbar-settings-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */; };
 		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
 		89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */; };
 		89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
@@ -62,6 +31,40 @@
 		89DEE1271973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
 		89DEE12F1973DB7E00E905A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */; };
 		89DEE1311973DB7E00E905A5 /* CloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */; };
+		89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE645F1980342B00156FD9 /* CSFirstViewController.m */; };
+		89FE646E1980342B00156FD9 /* CSFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64601980342B00156FD9 /* CSFirstViewController.xib */; };
+		89FE646F1980342B00156FD9 /* CSFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64621980342B00156FD9 /* CSFiveViewController.m */; };
+		89FE64701980342B00156FD9 /* CSFiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64631980342B00156FD9 /* CSFiveViewController.xib */; };
+		89FE64711980342B00156FD9 /* CSFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64651980342B00156FD9 /* CSFourViewController.m */; };
+		89FE64721980342B00156FD9 /* CSFourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64661980342B00156FD9 /* CSFourViewController.xib */; };
+		89FE64731980342B00156FD9 /* CSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64681980342B00156FD9 /* CSSecondViewController.m */; };
+		89FE64741980342B00156FD9 /* CSSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64691980342B00156FD9 /* CSSecondViewController.xib */; };
+		89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE646B1980342B00156FD9 /* CSThirdViewController.m */; };
+		89FE64761980342B00156FD9 /* CSThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE646C1980342B00156FD9 /* CSThirdViewController.xib */; };
+		89FE6480198034D700156FD9 /* tabbar-box-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */; };
+		89FE6481198034D700156FD9 /* tabbar-box-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */; };
+		89FE6482198034D700156FD9 /* tabbar-dropbox-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */; };
+		89FE6483198034D700156FD9 /* tabbar-googledrive-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */; };
+		89FE6484198034D700156FD9 /* tabbar-googledrive-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */; };
+		89FE6485198034D700156FD9 /* tabbar-settings-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */; };
+		89FE6486198034D700156FD9 /* tabbar-settings-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */; };
+		89FE6487198034D700156FD9 /* tabbar-sky-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */; };
+		89FE6488198034D700156FD9 /* tabbar-sky-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */; };
+		89FE6493198034E700156FD9 /* tabbar-box-default.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6489198034E700156FD9 /* tabbar-box-default.png.png */; };
+		89FE6494198034E700156FD9 /* tabbar-box-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648A198034E700156FD9 /* tabbar-box-selected.png */; };
+		89FE6495198034E700156FD9 /* tabbar-dropbox-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */; };
+		89FE6496198034E700156FD9 /* tabbar-dropbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */; };
+		89FE6497198034E700156FD9 /* tabbar-googledrive-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */; };
+		89FE6498198034E700156FD9 /* tabbar-googledrive-seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */; };
+		89FE6499198034E700156FD9 /* tabbar-settings-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648F198034E700156FD9 /* tabbar-settings-default.png */; };
+		89FE649A198034E700156FD9 /* tabbar-settings-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6490198034E700156FD9 /* tabbar-settings-selected.png */; };
+		89FE649B198034E700156FD9 /* tabbar-sky-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6491198034E700156FD9 /* tabbar-sky-default.png */; };
+		89FE649C198034E700156FD9 /* tabbar-sky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6492198034E700156FD9 /* tabbar-sky-selected.png */; };
+		89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE649F1980351200156FD9 /* CSLoginViewController.m */; };
+		89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64A01980351200156FD9 /* CSLoginViewController.xib */; };
+		89FE64A61980351200156FD9 /* CSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64A21980351200156FD9 /* CSMainViewController.m */; };
+		89FE64A71980351200156FD9 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64A31980351200156FD9 /* CSMainViewController.xib */; };
+		89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,17 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default@2x.png"; sourceTree = "<group>"; };
-		89057077197837220091B3C5 /* tabbar-dropbox-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default.png"; sourceTree = "<group>"; };
-		89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-selected@2x.png"; sourceTree = "<group>"; };
-		8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-seleted.png"; sourceTree = "<group>"; };
-		8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default@2x.png"; sourceTree = "<group>"; };
-		8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default.png"; sourceTree = "<group>"; };
-		8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected@2x.png"; sourceTree = "<group>"; };
-		8905708719783CE80091B3C5 /* tabbar-sky-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected.png"; sourceTree = "<group>"; };
-		8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default@2x.png"; sourceTree = "<group>"; };
-		8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default.png"; sourceTree = "<group>"; };
-		89280A261974C38800A2097B /* tabbar-dropbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-selected.png"; sourceTree = "<group>"; };
 		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
 		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
 		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
@@ -96,40 +88,13 @@
 		89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSBaseTableViewController.xib; path = Compoinents/CSBaseTableViewController.xib; sourceTree = "<group>"; };
 		89432C7F1973DEED000ABB30 /* CSMainTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainTableCell.h; path = Compoinents/CSMainTableCell.h; sourceTree = "<group>"; };
 		89432C801973DEED000ABB30 /* CSMainTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainTableCell.m; path = Compoinents/CSMainTableCell.m; sourceTree = "<group>"; };
-		89432C8A1973E006000ABB30 /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSLoginViewController.h; path = ViewController/CSLoginViewController.h; sourceTree = "<group>"; };
-		89432C8B1973E006000ABB30 /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSLoginViewController.m; path = ViewController/CSLoginViewController.m; sourceTree = "<group>"; };
-		89432C8C1973E006000ABB30 /* CSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSLoginViewController.xib; path = ViewController/CSLoginViewController.xib; sourceTree = "<group>"; };
-		89432C8F1973E5B7000ABB30 /* CSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFirstViewController.h; path = FiveMainViewController/CSFirstViewController.h; sourceTree = "<group>"; };
-		89432C901973E5B7000ABB30 /* CSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFirstViewController.m; path = FiveMainViewController/CSFirstViewController.m; sourceTree = "<group>"; };
-		89432C911973E5B7000ABB30 /* CSFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFirstViewController.xib; path = FiveMainViewController/CSFirstViewController.xib; sourceTree = "<group>"; };
-		89432C941973E62D000ABB30 /* CSSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSecondViewController.h; path = FiveMainViewController/CSSecondViewController.h; sourceTree = "<group>"; };
-		89432C951973E62D000ABB30 /* CSSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSecondViewController.m; path = FiveMainViewController/CSSecondViewController.m; sourceTree = "<group>"; };
-		89432C961973E62D000ABB30 /* CSSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSSecondViewController.xib; path = FiveMainViewController/CSSecondViewController.xib; sourceTree = "<group>"; };
-		89432C991973E6A9000ABB30 /* CSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSThirdViewController.h; path = FiveMainViewController/CSThirdViewController.h; sourceTree = "<group>"; };
-		89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSThirdViewController.m; path = FiveMainViewController/CSThirdViewController.m; sourceTree = "<group>"; };
-		89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSThirdViewController.xib; path = FiveMainViewController/CSThirdViewController.xib; sourceTree = "<group>"; };
-		89432CA31973E6CC000ABB30 /* CSFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFiveViewController.h; path = FiveMainViewController/CSFiveViewController.h; sourceTree = "<group>"; };
-		89432CA41973E6CC000ABB30 /* CSFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFiveViewController.m; path = FiveMainViewController/CSFiveViewController.m; sourceTree = "<group>"; };
-		89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFiveViewController.xib; path = FiveMainViewController/CSFiveViewController.xib; sourceTree = "<group>"; };
 		89432CA81973E707000ABB30 /* CSMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainTableCell.xib; path = Compoinents/CSMainTableCell.xib; sourceTree = "<group>"; };
-		89432CAA1973E713000ABB30 /* CSFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFourViewController.h; path = FiveMainViewController/CSFourViewController.h; sourceTree = "<group>"; };
-		89432CAB1973E713000ABB30 /* CSFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFourViewController.m; path = FiveMainViewController/CSFourViewController.m; sourceTree = "<group>"; };
-		89432CAC1973E713000ABB30 /* CSFourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFourViewController.xib; path = FiveMainViewController/CSFourViewController.xib; sourceTree = "<group>"; };
-		89432CAF1973E71E000ABB30 /* CSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainViewController.h; path = ViewController/CSMainViewController.h; sourceTree = "<group>"; };
-		89432CB01973E71E000ABB30 /* CSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainViewController.m; path = ViewController/CSMainViewController.m; sourceTree = "<group>"; };
-		89432CB11973E71E000ABB30 /* CSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainViewController.xib; path = ViewController/CSMainViewController.xib; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		89A2FF6D197D8C3D0010DCA1 /* tabbar-box-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-selected.png"; sourceTree = "<group>"; };
-		89A2FF6F197D8C420010DCA1 /* tabbar-box-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-selected@2x.png"; sourceTree = "<group>"; };
-		89A2FF71197D8C970010DCA1 /* tabbar-box-default.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-default.png.png"; sourceTree = "<group>"; };
-		89A2FF73197D8C9C0010DCA1 /* tabbar-box-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-default@2x.png"; sourceTree = "<group>"; };
+		898CF36D19811610009A2E3A /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding@2x.png"; sourceTree = "<group>"; };
+		898CF36F19811619009A2E3A /* welcome-branding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding.png"; sourceTree = "<group>"; };
 		89C1F039197E9D55007A695B /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected@2x.png"; path = "Images/Retina/tabbar-dropbox-selected@2x.png"; sourceTree = "<group>"; };
-		89CC316919745DBA00A9044C /* tabbar-settings-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default.png"; sourceTree = "<group>"; };
-		89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected.png"; sourceTree = "<group>"; };
-		89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default@2x.png"; sourceTree = "<group>"; };
-		89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected@2x.png"; sourceTree = "<group>"; };
 		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEE10B1973DB7E00E905A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +111,48 @@
 		89DEE12C1973DB7E00E905A5 /* CloudStorageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudStorageTests-Info.plist"; sourceTree = "<group>"; };
 		89DEE12E1973DB7E00E905A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudStorageTests.m; sourceTree = "<group>"; };
+		89FE645E1980342B00156FD9 /* CSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFirstViewController.h; path = ViewController/FiveMainViewController/CSFirstViewController.h; sourceTree = "<group>"; };
+		89FE645F1980342B00156FD9 /* CSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFirstViewController.m; path = ViewController/FiveMainViewController/CSFirstViewController.m; sourceTree = "<group>"; };
+		89FE64601980342B00156FD9 /* CSFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFirstViewController.xib; path = ViewController/FiveMainViewController/CSFirstViewController.xib; sourceTree = "<group>"; };
+		89FE64611980342B00156FD9 /* CSFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFiveViewController.h; path = ViewController/FiveMainViewController/CSFiveViewController.h; sourceTree = "<group>"; };
+		89FE64621980342B00156FD9 /* CSFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFiveViewController.m; path = ViewController/FiveMainViewController/CSFiveViewController.m; sourceTree = "<group>"; };
+		89FE64631980342B00156FD9 /* CSFiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFiveViewController.xib; path = ViewController/FiveMainViewController/CSFiveViewController.xib; sourceTree = "<group>"; };
+		89FE64641980342B00156FD9 /* CSFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFourViewController.h; path = ViewController/FiveMainViewController/CSFourViewController.h; sourceTree = "<group>"; };
+		89FE64651980342B00156FD9 /* CSFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFourViewController.m; path = ViewController/FiveMainViewController/CSFourViewController.m; sourceTree = "<group>"; };
+		89FE64661980342B00156FD9 /* CSFourViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFourViewController.xib; path = ViewController/FiveMainViewController/CSFourViewController.xib; sourceTree = "<group>"; };
+		89FE64671980342B00156FD9 /* CSSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSSecondViewController.h; path = ViewController/FiveMainViewController/CSSecondViewController.h; sourceTree = "<group>"; };
+		89FE64681980342B00156FD9 /* CSSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSSecondViewController.m; path = ViewController/FiveMainViewController/CSSecondViewController.m; sourceTree = "<group>"; };
+		89FE64691980342B00156FD9 /* CSSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSSecondViewController.xib; path = ViewController/FiveMainViewController/CSSecondViewController.xib; sourceTree = "<group>"; };
+		89FE646A1980342B00156FD9 /* CSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSThirdViewController.h; path = ViewController/FiveMainViewController/CSThirdViewController.h; sourceTree = "<group>"; };
+		89FE646B1980342B00156FD9 /* CSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSThirdViewController.m; path = ViewController/FiveMainViewController/CSThirdViewController.m; sourceTree = "<group>"; };
+		89FE646C1980342B00156FD9 /* CSThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSThirdViewController.xib; path = ViewController/FiveMainViewController/CSThirdViewController.xib; sourceTree = "<group>"; };
+		89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-default@2x.png"; path = "Images/Retina/tabbar-box-default@2x.png"; sourceTree = "<group>"; };
+		89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-selected@2x.png"; path = "Images/Retina/tabbar-box-selected@2x.png"; sourceTree = "<group>"; };
+		89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-default@2x.png"; path = "Images/Retina/tabbar-dropbox-default@2x.png"; sourceTree = "<group>"; };
+		89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-default@2x.png"; path = "Images/Retina/tabbar-googledrive-default@2x.png"; sourceTree = "<group>"; };
+		89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-selected@2x.png"; path = "Images/Retina/tabbar-googledrive-selected@2x.png"; sourceTree = "<group>"; };
+		89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-default@2x.png"; path = "Images/Retina/tabbar-settings-default@2x.png"; sourceTree = "<group>"; };
+		89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-selected@2x.png"; path = "Images/Retina/tabbar-settings-selected@2x.png"; sourceTree = "<group>"; };
+		89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-default@2x.png"; path = "Images/Retina/tabbar-sky-default@2x.png"; sourceTree = "<group>"; };
+		89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-selected@2x.png"; path = "Images/Retina/tabbar-sky-selected@2x.png"; sourceTree = "<group>"; };
+		89FE6489198034E700156FD9 /* tabbar-box-default.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-default.png.png"; path = "Images/NonRetina/tabbar-box-default.png.png"; sourceTree = "<group>"; };
+		89FE648A198034E700156FD9 /* tabbar-box-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-selected.png"; path = "Images/NonRetina/tabbar-box-selected.png"; sourceTree = "<group>"; };
+		89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-default.png"; path = "Images/NonRetina/tabbar-dropbox-default.png"; sourceTree = "<group>"; };
+		89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected.png"; path = "Images/NonRetina/tabbar-dropbox-selected.png"; sourceTree = "<group>"; };
+		89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-default.png"; path = "Images/NonRetina/tabbar-googledrive-default.png"; sourceTree = "<group>"; };
+		89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-seleted.png"; path = "Images/NonRetina/tabbar-googledrive-seleted.png"; sourceTree = "<group>"; };
+		89FE648F198034E700156FD9 /* tabbar-settings-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-default.png"; path = "Images/NonRetina/tabbar-settings-default.png"; sourceTree = "<group>"; };
+		89FE6490198034E700156FD9 /* tabbar-settings-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-selected.png"; path = "Images/NonRetina/tabbar-settings-selected.png"; sourceTree = "<group>"; };
+		89FE6491198034E700156FD9 /* tabbar-sky-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-default.png"; path = "Images/NonRetina/tabbar-sky-default.png"; sourceTree = "<group>"; };
+		89FE6492198034E700156FD9 /* tabbar-sky-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-selected.png"; path = "Images/NonRetina/tabbar-sky-selected.png"; sourceTree = "<group>"; };
+		89FE649E1980351200156FD9 /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginViewController.h; sourceTree = "<group>"; };
+		89FE649F1980351200156FD9 /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginViewController.m; sourceTree = "<group>"; };
+		89FE64A01980351200156FD9 /* CSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLoginViewController.xib; sourceTree = "<group>"; };
+		89FE64A11980351200156FD9 /* CSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMainViewController.h; sourceTree = "<group>"; };
+		89FE64A21980351200156FD9 /* CSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMainViewController.m; sourceTree = "<group>"; };
+		89FE64A31980351200156FD9 /* CSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMainViewController.xib; sourceTree = "<group>"; };
+		89FE64B31980361B00156FD9 /* CSRootDropboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRootDropboxTableViewController.h; path = ViewController/DropboxCotroller/CSRootDropboxTableViewController.h; sourceTree = "<group>"; };
+		89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRootDropboxTableViewController.m; path = ViewController/DropboxCotroller/CSRootDropboxTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +185,9 @@
 		89432C671973DD28000ABB30 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				89432CAF1973E71E000ABB30 /* CSMainViewController.h */,
-				89432CB01973E71E000ABB30 /* CSMainViewController.m */,
-				89432CB11973E71E000ABB30 /* CSMainViewController.xib */,
-				89432C8A1973E006000ABB30 /* CSLoginViewController.h */,
-				89432C8B1973E006000ABB30 /* CSLoginViewController.m */,
-				89432C8C1973E006000ABB30 /* CSLoginViewController.xib */,
+				89FE64A81980351C00156FD9 /* DropboxController */,
+				89FE649D1980351200156FD9 /* MainTabController */,
+				89432C841973DF4D000ABB30 /* FiveMainViewController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -230,21 +234,21 @@
 		89432C841973DF4D000ABB30 /* FiveMainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				89432CAA1973E713000ABB30 /* CSFourViewController.h */,
-				89432CAB1973E713000ABB30 /* CSFourViewController.m */,
-				89432CAC1973E713000ABB30 /* CSFourViewController.xib */,
-				89432C8F1973E5B7000ABB30 /* CSFirstViewController.h */,
-				89432C901973E5B7000ABB30 /* CSFirstViewController.m */,
-				89432C911973E5B7000ABB30 /* CSFirstViewController.xib */,
-				89432C941973E62D000ABB30 /* CSSecondViewController.h */,
-				89432C951973E62D000ABB30 /* CSSecondViewController.m */,
-				89432C961973E62D000ABB30 /* CSSecondViewController.xib */,
-				89432C991973E6A9000ABB30 /* CSThirdViewController.h */,
-				89432C9A1973E6A9000ABB30 /* CSThirdViewController.m */,
-				89432C9B1973E6A9000ABB30 /* CSThirdViewController.xib */,
-				89432CA31973E6CC000ABB30 /* CSFiveViewController.h */,
-				89432CA41973E6CC000ABB30 /* CSFiveViewController.m */,
-				89432CA51973E6CC000ABB30 /* CSFiveViewController.xib */,
+				89FE645E1980342B00156FD9 /* CSFirstViewController.h */,
+				89FE645F1980342B00156FD9 /* CSFirstViewController.m */,
+				89FE64601980342B00156FD9 /* CSFirstViewController.xib */,
+				89FE64611980342B00156FD9 /* CSFiveViewController.h */,
+				89FE64621980342B00156FD9 /* CSFiveViewController.m */,
+				89FE64631980342B00156FD9 /* CSFiveViewController.xib */,
+				89FE64641980342B00156FD9 /* CSFourViewController.h */,
+				89FE64651980342B00156FD9 /* CSFourViewController.m */,
+				89FE64661980342B00156FD9 /* CSFourViewController.xib */,
+				89FE64671980342B00156FD9 /* CSSecondViewController.h */,
+				89FE64681980342B00156FD9 /* CSSecondViewController.m */,
+				89FE64691980342B00156FD9 /* CSSecondViewController.xib */,
+				89FE646A1980342B00156FD9 /* CSThirdViewController.h */,
+				89FE646B1980342B00156FD9 /* CSThirdViewController.m */,
+				89FE646C1980342B00156FD9 /* CSThirdViewController.xib */,
 			);
 			name = FiveMainViewController;
 			sourceTree = "<group>";
@@ -261,16 +265,17 @@
 		89CC316219745C7000A9044C /* NonRetina */ = {
 			isa = PBXGroup;
 			children = (
-				89A2FF6D197D8C3D0010DCA1 /* tabbar-box-selected.png */,
-				89057077197837220091B3C5 /* tabbar-dropbox-default.png */,
-				89A2FF71197D8C970010DCA1 /* tabbar-box-default.png.png */,
-				89280A261974C38800A2097B /* tabbar-dropbox-selected.png */,
-				8905707F197838CA0091B3C5 /* tabbar-googledrive-default.png */,
-				8905707B197837720091B3C5 /* tabbar-googledrive-seleted.png */,
-				89CC316919745DBA00A9044C /* tabbar-settings-default.png */,
-				89CC316A19745DBA00A9044C /* tabbar-settings-selected.png */,
-				8905708B19783D6B0091B3C5 /* tabbar-sky-default.png */,
-				8905708719783CE80091B3C5 /* tabbar-sky-selected.png */,
+				898CF36F19811619009A2E3A /* welcome-branding.png */,
+				89FE6489198034E700156FD9 /* tabbar-box-default.png.png */,
+				89FE648A198034E700156FD9 /* tabbar-box-selected.png */,
+				89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */,
+				89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */,
+				89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */,
+				89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */,
+				89FE648F198034E700156FD9 /* tabbar-settings-default.png */,
+				89FE6490198034E700156FD9 /* tabbar-settings-selected.png */,
+				89FE6491198034E700156FD9 /* tabbar-sky-default.png */,
+				89FE6492198034E700156FD9 /* tabbar-sky-selected.png */,
 			);
 			name = NonRetina;
 			sourceTree = "<group>";
@@ -278,16 +283,17 @@
 		89CC316319745C8500A9044C /* Retina */ = {
 			isa = PBXGroup;
 			children = (
-				89A2FF6F197D8C420010DCA1 /* tabbar-box-selected@2x.png */,
-				89A2FF73197D8C9C0010DCA1 /* tabbar-box-default@2x.png */,
-				8905706F197816630091B3C5 /* tabbar-dropbox-default@2x.png */,
+				89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */,
+				89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */,
+				898CF36D19811610009A2E3A /* welcome-branding@2x.png */,
+				89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */,
+				89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */,
+				89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */,
+				89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */,
+				89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */,
+				89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */,
+				89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */,
 				89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */,
-				8905707D197838C50091B3C5 /* tabbar-googledrive-default@2x.png */,
-				89057079197837540091B3C5 /* tabbar-googledrive-selected@2x.png */,
-				89CC316D19745DCD00A9044C /* tabbar-settings-default@2x.png */,
-				89CC316E19745DCD00A9044C /* tabbar-settings-selected@2x.png */,
-				8905708919783D660091B3C5 /* tabbar-sky-default@2x.png */,
-				8905708519783CE30091B3C5 /* tabbar-sky-selected@2x.png */,
 			);
 			name = Retina;
 			sourceTree = "<group>";
@@ -332,7 +338,6 @@
 				89432C6A1973DD72000ABB30 /* Compoinents */,
 				89432C691973DD66000ABB30 /* Models */,
 				89432C681973DD57000ABB30 /* Libraries */,
-				89432C841973DF4D000ABB30 /* FiveMainViewController */,
 				89432C671973DD28000ABB30 /* ViewController */,
 				89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */,
 				89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */,
@@ -370,6 +375,29 @@
 				89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89FE649D1980351200156FD9 /* MainTabController */ = {
+			isa = PBXGroup;
+			children = (
+				89FE649E1980351200156FD9 /* CSLoginViewController.h */,
+				89FE649F1980351200156FD9 /* CSLoginViewController.m */,
+				89FE64A01980351200156FD9 /* CSLoginViewController.xib */,
+				89FE64A11980351200156FD9 /* CSMainViewController.h */,
+				89FE64A21980351200156FD9 /* CSMainViewController.m */,
+				89FE64A31980351200156FD9 /* CSMainViewController.xib */,
+			);
+			name = MainTabController;
+			path = ViewController/MainTabController;
+			sourceTree = "<group>";
+		};
+		89FE64A81980351C00156FD9 /* DropboxController */ = {
+			isa = PBXGroup;
+			children = (
+				89FE64B31980361B00156FD9 /* CSRootDropboxTableViewController.h */,
+				89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */,
+			);
+			name = DropboxController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,37 +476,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89280A271974C38800A2097B /* tabbar-dropbox-selected.png in Resources */,
 				89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */,
-				89CC316C19745DBA00A9044C /* tabbar-settings-selected.png in Resources */,
-				89CC316B19745DBA00A9044C /* tabbar-settings-default.png in Resources */,
-				89432C9D1973E6A9000ABB30 /* CSThirdViewController.xib in Resources */,
-				8905708619783CE30091B3C5 /* tabbar-sky-selected@2x.png in Resources */,
-				89432C8E1973E006000ABB30 /* CSLoginViewController.xib in Resources */,
-				89057080197838CA0091B3C5 /* tabbar-googledrive-default.png in Resources */,
+				89FE649A198034E700156FD9 /* tabbar-settings-selected.png in Resources */,
+				89FE64721980342B00156FD9 /* CSFourViewController.xib in Resources */,
+				89FE6482198034D700156FD9 /* tabbar-dropbox-default@2x.png in Resources */,
+				89FE6487198034D700156FD9 /* tabbar-sky-default@2x.png in Resources */,
+				89FE6483198034D700156FD9 /* tabbar-googledrive-default@2x.png in Resources */,
+				89FE64701980342B00156FD9 /* CSFiveViewController.xib in Resources */,
+				89FE6499198034E700156FD9 /* tabbar-settings-default.png in Resources */,
+				89FE6495198034E700156FD9 /* tabbar-dropbox-default.png in Resources */,
+				89FE649C198034E700156FD9 /* tabbar-sky-selected.png in Resources */,
+				89FE646E1980342B00156FD9 /* CSFirstViewController.xib in Resources */,
+				89FE6493198034E700156FD9 /* tabbar-box-default.png.png in Resources */,
+				89FE6498198034E700156FD9 /* tabbar-googledrive-seleted.png in Resources */,
+				89FE6484198034D700156FD9 /* tabbar-googledrive-selected@2x.png in Resources */,
 				89DEE1161973DB7E00E905A5 /* InfoPlist.strings in Resources */,
-				8905707C197837720091B3C5 /* tabbar-googledrive-seleted.png in Resources */,
-				89A2FF6E197D8C3D0010DCA1 /* tabbar-box-selected.png in Resources */,
-				8905707E197838C50091B3C5 /* tabbar-googledrive-default@2x.png in Resources */,
-				89CC316F19745DCD00A9044C /* tabbar-settings-default@2x.png in Resources */,
-				8905708C19783D6B0091B3C5 /* tabbar-sky-default.png in Resources */,
+				89FE64A71980351200156FD9 /* CSMainViewController.xib in Resources */,
+				89FE649B198034E700156FD9 /* tabbar-sky-default.png in Resources */,
+				89FE64741980342B00156FD9 /* CSSecondViewController.xib in Resources */,
+				898CF36E19811610009A2E3A /* welcome-branding@2x.png in Resources */,
+				89FE6485198034D700156FD9 /* tabbar-settings-default@2x.png in Resources */,
+				89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */,
 				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
-				89432C981973E62D000ABB30 /* CSSecondViewController.xib in Resources */,
-				89A2FF74197D8C9C0010DCA1 /* tabbar-box-default@2x.png in Resources */,
-				8905708819783CE80091B3C5 /* tabbar-sky-selected.png in Resources */,
-				89432C931973E5B7000ABB30 /* CSFirstViewController.xib in Resources */,
-				89A2FF70197D8C420010DCA1 /* tabbar-box-selected@2x.png in Resources */,
-				89CC317019745DCD00A9044C /* tabbar-settings-selected@2x.png in Resources */,
+				89FE6486198034D700156FD9 /* tabbar-settings-selected@2x.png in Resources */,
+				89FE6480198034D700156FD9 /* tabbar-box-default@2x.png in Resources */,
+				89FE6496198034E700156FD9 /* tabbar-dropbox-selected.png in Resources */,
 				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
-				89432CB31973E71E000ABB30 /* CSMainViewController.xib in Resources */,
-				89432CAE1973E713000ABB30 /* CSFourViewController.xib in Resources */,
-				8905707A197837540091B3C5 /* tabbar-googledrive-selected@2x.png in Resources */,
-				89A2FF72197D8C970010DCA1 /* tabbar-box-default.png.png in Resources */,
-				89057070197816630091B3C5 /* tabbar-dropbox-default@2x.png in Resources */,
+				898CF37019811619009A2E3A /* welcome-branding.png in Resources */,
+				89FE6497198034E700156FD9 /* tabbar-googledrive-default.png in Resources */,
+				89FE6488198034D700156FD9 /* tabbar-sky-selected@2x.png in Resources */,
+				89FE64761980342B00156FD9 /* CSThirdViewController.xib in Resources */,
 				89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */,
-				89057078197837220091B3C5 /* tabbar-dropbox-default.png in Resources */,
-				8905708A19783D660091B3C5 /* tabbar-sky-default@2x.png in Resources */,
-				89432CA71973E6CC000ABB30 /* CSFiveViewController.xib in Resources */,
+				89FE6494198034E700156FD9 /* tabbar-box-selected.png in Resources */,
+				89FE6481198034D700156FD9 /* tabbar-box-selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,18 +527,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89432C9C1973E6A9000ABB30 /* CSThirdViewController.m in Sources */,
-				89432C921973E5B7000ABB30 /* CSFirstViewController.m in Sources */,
-				89432C8D1973E006000ABB30 /* CSLoginViewController.m in Sources */,
-				89432C971973E62D000ABB30 /* CSSecondViewController.m in Sources */,
+				89FE646F1980342B00156FD9 /* CSFiveViewController.m in Sources */,
+				89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */,
 				89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */,
+				89FE64731980342B00156FD9 /* CSSecondViewController.m in Sources */,
 				89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */,
-				89432CAD1973E713000ABB30 /* CSFourViewController.m in Sources */,
 				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
+				89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */,
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
+				89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */,
+				89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */,
+				89FE64711980342B00156FD9 /* CSFourViewController.m in Sources */,
 				89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */,
-				89432CA61973E6CC000ABB30 /* CSFiveViewController.m in Sources */,
-				89432CB21973E71E000ABB30 /* CSMainViewController.m in Sources */,
+				89FE64A61980351200156FD9 /* CSMainViewController.m in Sources */,
 				89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
