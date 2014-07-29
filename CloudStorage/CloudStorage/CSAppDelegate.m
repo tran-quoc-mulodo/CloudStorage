@@ -25,7 +25,6 @@
     [DBSession setSharedSession:dbSession];
     [DBRequest setNetworkRequestDelegate:self];
     
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
@@ -45,6 +44,8 @@
 		}
 		return YES;
 	}
+    
+    // Add whatever other url handling code your app requires here
 	
 	return NO;
 }

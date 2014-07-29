@@ -28,17 +28,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7) {
-        // iOS 7 or newer
-        [[UINavigationBar appearance] setBarTintColor:kCSNavigationBackgroundColor];
-        [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
-    } else {
-        // iOS 6 or older
-        [[UINavigationBar appearance] setTintColor:kCSNavigationBackgroundColor];
-    }
-    
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIColor whiteColor], UITextAttributeTextColor,
+    // iOS 7 or newer
+    [[UINavigationBar appearance] setBarTintColor:kCSNavigationBackgroundColor];
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,
                                                           nil]];
     
     _controller1 = [[CSFirstViewController alloc] initWithNibName:@"CSFirstViewController" bundle:nil];
@@ -64,6 +57,16 @@
     
     
     self.viewControllers = [NSArray arrayWithObjects:navigation1, navigation2, navigation3, navigation4, navigation5, nil];
+    
+    [[[self.viewControllers objectAtIndex:0] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-dropbox-selected.png"]];
+    
+    [[[self.viewControllers objectAtIndex:1] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-box-selected.png.png"]];
+    
+    [[[self.viewControllers objectAtIndex:2] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-googledrive-selected.png"]];
+    
+    [[[self.viewControllers objectAtIndex:3] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-sky-selected.png"]];
+    
+    [[[self.viewControllers objectAtIndex:4] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-settings-selected.png"]];
 }
 
 - (void)didReceiveMemoryWarning

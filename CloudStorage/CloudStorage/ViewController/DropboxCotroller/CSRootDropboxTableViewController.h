@@ -7,7 +7,11 @@
 //
 
 #import "CSBaseTableViewController.h"
+#import <DropboxSDK/DropboxSDK.h>
 
-@interface CSRootDropboxTableViewController : CSBaseTableViewController
+@interface CSRootDropboxTableViewController : CSBaseTableViewController <DBRestClientDelegate> {
+    DBRestClient            *_restClient;
+    NSArray                 *_metaDataContent;
+}
 
 @end

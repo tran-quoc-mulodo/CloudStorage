@@ -15,8 +15,8 @@
 		89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA81973E707000ABB30 /* CSMainTableCell.xib */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
-		898CF36E19811610009A2E3A /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 898CF36D19811610009A2E3A /* welcome-branding@2x.png */; };
-		898CF37019811619009A2E3A /* welcome-branding.png in Resources */ = {isa = PBXBuildFile; fileRef = 898CF36F19811619009A2E3A /* welcome-branding.png */; };
+		8974836E198777F000C67BBB /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8974836D198777F000C67BBB /* welcome-branding@2x.png */; };
+		89748370198777FF00C67BBB /* welcome-branding.png in Resources */ = {isa = PBXBuildFile; fileRef = 8974836F198777FF00C67BBB /* welcome-branding.png */; };
 		89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1F039197E9D55007A695B /* DropboxSDK.framework */; };
 		89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */; };
 		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
@@ -91,8 +91,8 @@
 		89432CA81973E707000ABB30 /* CSMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainTableCell.xib; path = Compoinents/CSMainTableCell.xib; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		898CF36D19811610009A2E3A /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding@2x.png"; sourceTree = "<group>"; };
-		898CF36F19811619009A2E3A /* welcome-branding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding.png"; sourceTree = "<group>"; };
+		8974836D198777F000C67BBB /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcome-branding@2x.png"; path = "Images/Retina/welcome-branding@2x.png"; sourceTree = "<group>"; };
+		8974836F198777FF00C67BBB /* welcome-branding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcome-branding.png"; path = "Images/NonRetina/welcome-branding.png"; sourceTree = "<group>"; };
 		89C1F039197E9D55007A695B /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected@2x.png"; path = "Images/Retina/tabbar-dropbox-selected@2x.png"; sourceTree = "<group>"; };
 		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,8 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				89FE64A81980351C00156FD9 /* DropboxController */,
-				89FE649D1980351200156FD9 /* MainTabController */,
 				89432C841973DF4D000ABB30 /* FiveMainViewController */,
+				89FE649D1980351200156FD9 /* MainTabController */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -265,7 +265,6 @@
 		89CC316219745C7000A9044C /* NonRetina */ = {
 			isa = PBXGroup;
 			children = (
-				898CF36F19811619009A2E3A /* welcome-branding.png */,
 				89FE6489198034E700156FD9 /* tabbar-box-default.png.png */,
 				89FE648A198034E700156FD9 /* tabbar-box-selected.png */,
 				89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */,
@@ -276,6 +275,7 @@
 				89FE6490198034E700156FD9 /* tabbar-settings-selected.png */,
 				89FE6491198034E700156FD9 /* tabbar-sky-default.png */,
 				89FE6492198034E700156FD9 /* tabbar-sky-selected.png */,
+				8974836F198777FF00C67BBB /* welcome-branding.png */,
 			);
 			name = NonRetina;
 			sourceTree = "<group>";
@@ -285,15 +285,15 @@
 			children = (
 				89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */,
 				89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */,
-				898CF36D19811610009A2E3A /* welcome-branding@2x.png */,
 				89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */,
+				89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */,
 				89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */,
 				89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */,
 				89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */,
 				89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */,
 				89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */,
 				89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */,
-				89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */,
+				8974836D198777F000C67BBB /* welcome-branding@2x.png */,
 			);
 			name = Retina;
 			sourceTree = "<group>";
@@ -494,7 +494,6 @@
 				89FE64A71980351200156FD9 /* CSMainViewController.xib in Resources */,
 				89FE649B198034E700156FD9 /* tabbar-sky-default.png in Resources */,
 				89FE64741980342B00156FD9 /* CSSecondViewController.xib in Resources */,
-				898CF36E19811610009A2E3A /* welcome-branding@2x.png in Resources */,
 				89FE6485198034D700156FD9 /* tabbar-settings-default@2x.png in Resources */,
 				89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */,
 				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
@@ -502,8 +501,9 @@
 				89FE6480198034D700156FD9 /* tabbar-box-default@2x.png in Resources */,
 				89FE6496198034E700156FD9 /* tabbar-dropbox-selected.png in Resources */,
 				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
-				898CF37019811619009A2E3A /* welcome-branding.png in Resources */,
 				89FE6497198034E700156FD9 /* tabbar-googledrive-default.png in Resources */,
+				89748370198777FF00C67BBB /* welcome-branding.png in Resources */,
+				8974836E198777F000C67BBB /* welcome-branding@2x.png in Resources */,
 				89FE6488198034D700156FD9 /* tabbar-sky-selected@2x.png in Resources */,
 				89FE64761980342B00156FD9 /* CSThirdViewController.xib in Resources */,
 				89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */,
@@ -666,7 +666,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
 				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -684,7 +684,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
 				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

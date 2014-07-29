@@ -6,14 +6,15 @@
 //  Copyright (c) 2014 anhquoc. All rights reserved.
 //
 
-@class DBRestClient;
-
 #import <UIKit/UIKit.h>
 
-@interface CSFirstViewController : UIViewController {
-    DBRestClient* restClient;
-}
+
+@class CSRootDropboxTableViewController;
+
+@interface CSFirstViewController : UIViewController
 
 - (void)actionWhenDidLinkToDrobox;
+
+@property (nonatomic, strong) CSRootDropboxTableViewController *rootViewDropbox;
 
 @end
