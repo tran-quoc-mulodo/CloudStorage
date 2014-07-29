@@ -15,10 +15,36 @@
 		89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432CA81973E707000ABB30 /* CSMainTableCell.xib */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
-		8974836E198777F000C67BBB /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8974836D198777F000C67BBB /* welcome-branding@2x.png */; };
-		89748370198777FF00C67BBB /* welcome-branding.png in Resources */ = {isa = PBXBuildFile; fileRef = 8974836F198777FF00C67BBB /* welcome-branding.png */; };
 		89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1F039197E9D55007A695B /* DropboxSDK.framework */; };
-		89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */; };
+		89C62FAB1987D18D00557DBF /* btn-bar-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F901987D18D00557DBF /* btn-bar-button.png */; };
+		89C62FAC1987D18D00557DBF /* icon-folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F911987D18D00557DBF /* icon-folder.png */; };
+		89C62FAD1987D18D00557DBF /* tabbar-box-default.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F921987D18D00557DBF /* tabbar-box-default.png.png */; };
+		89C62FAE1987D18D00557DBF /* tabbar-box-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F931987D18D00557DBF /* tabbar-box-selected.png */; };
+		89C62FAF1987D18D00557DBF /* tabbar-dropbox-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F941987D18D00557DBF /* tabbar-dropbox-default.png */; };
+		89C62FB01987D18D00557DBF /* tabbar-dropbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F951987D18D00557DBF /* tabbar-dropbox-selected.png */; };
+		89C62FB11987D18D00557DBF /* tabbar-googledrive-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F961987D18D00557DBF /* tabbar-googledrive-default.png */; };
+		89C62FB21987D18D00557DBF /* tabbar-googledrive-seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F971987D18D00557DBF /* tabbar-googledrive-seleted.png */; };
+		89C62FB31987D18D00557DBF /* tabbar-settings-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F981987D18D00557DBF /* tabbar-settings-default.png */; };
+		89C62FB41987D18D00557DBF /* tabbar-settings-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F991987D18D00557DBF /* tabbar-settings-selected.png */; };
+		89C62FB51987D18D00557DBF /* tabbar-sky-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F9A1987D18D00557DBF /* tabbar-sky-default.png */; };
+		89C62FB61987D18D00557DBF /* tabbar-sky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F9B1987D18D00557DBF /* tabbar-sky-selected.png */; };
+		89C62FB71987D18D00557DBF /* welcome-branding.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F9C1987D18D00557DBF /* welcome-branding.png */; };
+		89C62FB81987D18D00557DBF /* btn-bar-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F9E1987D18D00557DBF /* btn-bar-button@2x.png */; };
+		89C62FB91987D18D00557DBF /* icon-folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F9F1987D18D00557DBF /* icon-folder@2x.png */; };
+		89C62FBA1987D18D00557DBF /* tabbar-box-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA01987D18D00557DBF /* tabbar-box-default@2x.png */; };
+		89C62FBB1987D18D00557DBF /* tabbar-box-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA11987D18D00557DBF /* tabbar-box-selected@2x.png */; };
+		89C62FBC1987D18D00557DBF /* tabbar-dropbox-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA21987D18D00557DBF /* tabbar-dropbox-default@2x.png */; };
+		89C62FBD1987D18D00557DBF /* tabbar-dropbox-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA31987D18D00557DBF /* tabbar-dropbox-selected@2x.png */; };
+		89C62FBE1987D18D00557DBF /* tabbar-googledrive-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA41987D18D00557DBF /* tabbar-googledrive-default@2x.png */; };
+		89C62FBF1987D18D00557DBF /* tabbar-googledrive-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA51987D18D00557DBF /* tabbar-googledrive-selected@2x.png */; };
+		89C62FC01987D18D00557DBF /* tabbar-settings-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA61987D18D00557DBF /* tabbar-settings-default@2x.png */; };
+		89C62FC11987D18D00557DBF /* tabbar-settings-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA71987D18D00557DBF /* tabbar-settings-selected@2x.png */; };
+		89C62FC21987D18D00557DBF /* tabbar-sky-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA81987D18D00557DBF /* tabbar-sky-default@2x.png */; };
+		89C62FC31987D18D00557DBF /* tabbar-sky-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FA91987D18D00557DBF /* tabbar-sky-selected@2x.png */; };
+		89C62FC41987D18D00557DBF /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FAA1987D18D00557DBF /* welcome-branding@2x.png */; };
+		89C62FC61987D1CF00557DBF /* icon-folder-public.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FC51987D1CF00557DBF /* icon-folder-public.png */; };
+		89C62FC81987D1D700557DBF /* icon-folder-public@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FC71987D1D700557DBF /* icon-folder-public@2x.png */; };
+		89C62FCB1987EA2500557DBF /* CSChildDropboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */; };
 		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
 		89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */; };
 		89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
@@ -41,29 +67,9 @@
 		89FE64741980342B00156FD9 /* CSSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64691980342B00156FD9 /* CSSecondViewController.xib */; };
 		89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE646B1980342B00156FD9 /* CSThirdViewController.m */; };
 		89FE64761980342B00156FD9 /* CSThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE646C1980342B00156FD9 /* CSThirdViewController.xib */; };
-		89FE6480198034D700156FD9 /* tabbar-box-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */; };
-		89FE6481198034D700156FD9 /* tabbar-box-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */; };
-		89FE6482198034D700156FD9 /* tabbar-dropbox-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */; };
-		89FE6483198034D700156FD9 /* tabbar-googledrive-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */; };
-		89FE6484198034D700156FD9 /* tabbar-googledrive-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */; };
-		89FE6485198034D700156FD9 /* tabbar-settings-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */; };
-		89FE6486198034D700156FD9 /* tabbar-settings-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */; };
-		89FE6487198034D700156FD9 /* tabbar-sky-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */; };
-		89FE6488198034D700156FD9 /* tabbar-sky-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */; };
-		89FE6493198034E700156FD9 /* tabbar-box-default.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6489198034E700156FD9 /* tabbar-box-default.png.png */; };
-		89FE6494198034E700156FD9 /* tabbar-box-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648A198034E700156FD9 /* tabbar-box-selected.png */; };
-		89FE6495198034E700156FD9 /* tabbar-dropbox-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */; };
-		89FE6496198034E700156FD9 /* tabbar-dropbox-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */; };
-		89FE6497198034E700156FD9 /* tabbar-googledrive-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */; };
-		89FE6498198034E700156FD9 /* tabbar-googledrive-seleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */; };
-		89FE6499198034E700156FD9 /* tabbar-settings-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE648F198034E700156FD9 /* tabbar-settings-default.png */; };
-		89FE649A198034E700156FD9 /* tabbar-settings-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6490198034E700156FD9 /* tabbar-settings-selected.png */; };
-		89FE649B198034E700156FD9 /* tabbar-sky-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6491198034E700156FD9 /* tabbar-sky-default.png */; };
-		89FE649C198034E700156FD9 /* tabbar-sky-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 89FE6492198034E700156FD9 /* tabbar-sky-selected.png */; };
 		89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE649F1980351200156FD9 /* CSLoginViewController.m */; };
 		89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64A01980351200156FD9 /* CSLoginViewController.xib */; };
 		89FE64A61980351200156FD9 /* CSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64A21980351200156FD9 /* CSMainViewController.m */; };
-		89FE64A71980351200156FD9 /* CSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64A31980351200156FD9 /* CSMainViewController.xib */; };
 		89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -91,10 +97,37 @@
 		89432CA81973E707000ABB30 /* CSMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSMainTableCell.xib; path = Compoinents/CSMainTableCell.xib; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8974836D198777F000C67BBB /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcome-branding@2x.png"; path = "Images/Retina/welcome-branding@2x.png"; sourceTree = "<group>"; };
-		8974836F198777FF00C67BBB /* welcome-branding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcome-branding.png"; path = "Images/NonRetina/welcome-branding.png"; sourceTree = "<group>"; };
 		89C1F039197E9D55007A695B /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
-		89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected@2x.png"; path = "Images/Retina/tabbar-dropbox-selected@2x.png"; sourceTree = "<group>"; };
+		89C62F901987D18D00557DBF /* btn-bar-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-bar-button.png"; sourceTree = "<group>"; };
+		89C62F911987D18D00557DBF /* icon-folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder.png"; sourceTree = "<group>"; };
+		89C62F921987D18D00557DBF /* tabbar-box-default.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-default.png.png"; sourceTree = "<group>"; };
+		89C62F931987D18D00557DBF /* tabbar-box-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-selected.png"; sourceTree = "<group>"; };
+		89C62F941987D18D00557DBF /* tabbar-dropbox-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default.png"; sourceTree = "<group>"; };
+		89C62F951987D18D00557DBF /* tabbar-dropbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-selected.png"; sourceTree = "<group>"; };
+		89C62F961987D18D00557DBF /* tabbar-googledrive-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default.png"; sourceTree = "<group>"; };
+		89C62F971987D18D00557DBF /* tabbar-googledrive-seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-seleted.png"; sourceTree = "<group>"; };
+		89C62F981987D18D00557DBF /* tabbar-settings-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default.png"; sourceTree = "<group>"; };
+		89C62F991987D18D00557DBF /* tabbar-settings-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected.png"; sourceTree = "<group>"; };
+		89C62F9A1987D18D00557DBF /* tabbar-sky-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default.png"; sourceTree = "<group>"; };
+		89C62F9B1987D18D00557DBF /* tabbar-sky-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected.png"; sourceTree = "<group>"; };
+		89C62F9C1987D18D00557DBF /* welcome-branding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding.png"; sourceTree = "<group>"; };
+		89C62F9E1987D18D00557DBF /* btn-bar-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-bar-button@2x.png"; sourceTree = "<group>"; };
+		89C62F9F1987D18D00557DBF /* icon-folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder@2x.png"; sourceTree = "<group>"; };
+		89C62FA01987D18D00557DBF /* tabbar-box-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-default@2x.png"; sourceTree = "<group>"; };
+		89C62FA11987D18D00557DBF /* tabbar-box-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-selected@2x.png"; sourceTree = "<group>"; };
+		89C62FA21987D18D00557DBF /* tabbar-dropbox-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-default@2x.png"; sourceTree = "<group>"; };
+		89C62FA31987D18D00557DBF /* tabbar-dropbox-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-dropbox-selected@2x.png"; sourceTree = "<group>"; };
+		89C62FA41987D18D00557DBF /* tabbar-googledrive-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-default@2x.png"; sourceTree = "<group>"; };
+		89C62FA51987D18D00557DBF /* tabbar-googledrive-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-googledrive-selected@2x.png"; sourceTree = "<group>"; };
+		89C62FA61987D18D00557DBF /* tabbar-settings-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-default@2x.png"; sourceTree = "<group>"; };
+		89C62FA71987D18D00557DBF /* tabbar-settings-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-settings-selected@2x.png"; sourceTree = "<group>"; };
+		89C62FA81987D18D00557DBF /* tabbar-sky-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-default@2x.png"; sourceTree = "<group>"; };
+		89C62FA91987D18D00557DBF /* tabbar-sky-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-sky-selected@2x.png"; sourceTree = "<group>"; };
+		89C62FAA1987D18D00557DBF /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding@2x.png"; sourceTree = "<group>"; };
+		89C62FC51987D1CF00557DBF /* icon-folder-public.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder-public.png"; sourceTree = "<group>"; };
+		89C62FC71987D1D700557DBF /* icon-folder-public@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder-public@2x.png"; sourceTree = "<group>"; };
+		89C62FC91987EA2500557DBF /* CSChildDropboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSChildDropboxViewController.h; path = ViewController/DropboxCotroller/CSChildDropboxViewController.h; sourceTree = "<group>"; };
+		89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSChildDropboxViewController.m; path = ViewController/DropboxCotroller/CSChildDropboxViewController.m; sourceTree = "<group>"; };
 		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEE10B1973DB7E00E905A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,31 +159,11 @@
 		89FE646A1980342B00156FD9 /* CSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSThirdViewController.h; path = ViewController/FiveMainViewController/CSThirdViewController.h; sourceTree = "<group>"; };
 		89FE646B1980342B00156FD9 /* CSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSThirdViewController.m; path = ViewController/FiveMainViewController/CSThirdViewController.m; sourceTree = "<group>"; };
 		89FE646C1980342B00156FD9 /* CSThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSThirdViewController.xib; path = ViewController/FiveMainViewController/CSThirdViewController.xib; sourceTree = "<group>"; };
-		89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-default@2x.png"; path = "Images/Retina/tabbar-box-default@2x.png"; sourceTree = "<group>"; };
-		89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-selected@2x.png"; path = "Images/Retina/tabbar-box-selected@2x.png"; sourceTree = "<group>"; };
-		89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-default@2x.png"; path = "Images/Retina/tabbar-dropbox-default@2x.png"; sourceTree = "<group>"; };
-		89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-default@2x.png"; path = "Images/Retina/tabbar-googledrive-default@2x.png"; sourceTree = "<group>"; };
-		89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-selected@2x.png"; path = "Images/Retina/tabbar-googledrive-selected@2x.png"; sourceTree = "<group>"; };
-		89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-default@2x.png"; path = "Images/Retina/tabbar-settings-default@2x.png"; sourceTree = "<group>"; };
-		89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-selected@2x.png"; path = "Images/Retina/tabbar-settings-selected@2x.png"; sourceTree = "<group>"; };
-		89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-default@2x.png"; path = "Images/Retina/tabbar-sky-default@2x.png"; sourceTree = "<group>"; };
-		89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-selected@2x.png"; path = "Images/Retina/tabbar-sky-selected@2x.png"; sourceTree = "<group>"; };
-		89FE6489198034E700156FD9 /* tabbar-box-default.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-default.png.png"; path = "Images/NonRetina/tabbar-box-default.png.png"; sourceTree = "<group>"; };
-		89FE648A198034E700156FD9 /* tabbar-box-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-box-selected.png"; path = "Images/NonRetina/tabbar-box-selected.png"; sourceTree = "<group>"; };
-		89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-default.png"; path = "Images/NonRetina/tabbar-dropbox-default.png"; sourceTree = "<group>"; };
-		89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-dropbox-selected.png"; path = "Images/NonRetina/tabbar-dropbox-selected.png"; sourceTree = "<group>"; };
-		89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-default.png"; path = "Images/NonRetina/tabbar-googledrive-default.png"; sourceTree = "<group>"; };
-		89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-googledrive-seleted.png"; path = "Images/NonRetina/tabbar-googledrive-seleted.png"; sourceTree = "<group>"; };
-		89FE648F198034E700156FD9 /* tabbar-settings-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-default.png"; path = "Images/NonRetina/tabbar-settings-default.png"; sourceTree = "<group>"; };
-		89FE6490198034E700156FD9 /* tabbar-settings-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-settings-selected.png"; path = "Images/NonRetina/tabbar-settings-selected.png"; sourceTree = "<group>"; };
-		89FE6491198034E700156FD9 /* tabbar-sky-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-default.png"; path = "Images/NonRetina/tabbar-sky-default.png"; sourceTree = "<group>"; };
-		89FE6492198034E700156FD9 /* tabbar-sky-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-sky-selected.png"; path = "Images/NonRetina/tabbar-sky-selected.png"; sourceTree = "<group>"; };
 		89FE649E1980351200156FD9 /* CSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLoginViewController.h; sourceTree = "<group>"; };
 		89FE649F1980351200156FD9 /* CSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLoginViewController.m; sourceTree = "<group>"; };
 		89FE64A01980351200156FD9 /* CSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSLoginViewController.xib; sourceTree = "<group>"; };
 		89FE64A11980351200156FD9 /* CSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMainViewController.h; sourceTree = "<group>"; };
 		89FE64A21980351200156FD9 /* CSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMainViewController.m; sourceTree = "<group>"; };
-		89FE64A31980351200156FD9 /* CSMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMainViewController.xib; sourceTree = "<group>"; };
 		89FE64B31980361B00156FD9 /* CSRootDropboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSRootDropboxTableViewController.h; path = ViewController/DropboxCotroller/CSRootDropboxTableViewController.h; sourceTree = "<group>"; };
 		89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSRootDropboxTableViewController.m; path = ViewController/DropboxCotroller/CSRootDropboxTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,49 +266,55 @@
 			name = FiveMainViewController;
 			sourceTree = "<group>";
 		};
-		89CC315F197458E700A9044C /* Images */ = {
+		89C62F8E1987D18D00557DBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				89CC316319745C8500A9044C /* Retina */,
-				89CC316219745C7000A9044C /* NonRetina */,
+				89C62F8F1987D18D00557DBF /* NonRetina */,
+				89C62F9D1987D18D00557DBF /* Retina */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
-		89CC316219745C7000A9044C /* NonRetina */ = {
+		89C62F8F1987D18D00557DBF /* NonRetina */ = {
 			isa = PBXGroup;
 			children = (
-				89FE6489198034E700156FD9 /* tabbar-box-default.png.png */,
-				89FE648A198034E700156FD9 /* tabbar-box-selected.png */,
-				89FE648B198034E700156FD9 /* tabbar-dropbox-default.png */,
-				89FE648C198034E700156FD9 /* tabbar-dropbox-selected.png */,
-				89FE648D198034E700156FD9 /* tabbar-googledrive-default.png */,
-				89FE648E198034E700156FD9 /* tabbar-googledrive-seleted.png */,
-				89FE648F198034E700156FD9 /* tabbar-settings-default.png */,
-				89FE6490198034E700156FD9 /* tabbar-settings-selected.png */,
-				89FE6491198034E700156FD9 /* tabbar-sky-default.png */,
-				89FE6492198034E700156FD9 /* tabbar-sky-selected.png */,
-				8974836F198777FF00C67BBB /* welcome-branding.png */,
+				89C62F901987D18D00557DBF /* btn-bar-button.png */,
+				89C62FC51987D1CF00557DBF /* icon-folder-public.png */,
+				89C62F911987D18D00557DBF /* icon-folder.png */,
+				89C62F921987D18D00557DBF /* tabbar-box-default.png.png */,
+				89C62F931987D18D00557DBF /* tabbar-box-selected.png */,
+				89C62F941987D18D00557DBF /* tabbar-dropbox-default.png */,
+				89C62F951987D18D00557DBF /* tabbar-dropbox-selected.png */,
+				89C62F961987D18D00557DBF /* tabbar-googledrive-default.png */,
+				89C62F971987D18D00557DBF /* tabbar-googledrive-seleted.png */,
+				89C62F981987D18D00557DBF /* tabbar-settings-default.png */,
+				89C62F991987D18D00557DBF /* tabbar-settings-selected.png */,
+				89C62F9A1987D18D00557DBF /* tabbar-sky-default.png */,
+				89C62F9B1987D18D00557DBF /* tabbar-sky-selected.png */,
+				89C62F9C1987D18D00557DBF /* welcome-branding.png */,
 			);
-			name = NonRetina;
+			path = NonRetina;
 			sourceTree = "<group>";
 		};
-		89CC316319745C8500A9044C /* Retina */ = {
+		89C62F9D1987D18D00557DBF /* Retina */ = {
 			isa = PBXGroup;
 			children = (
-				89FE6477198034D700156FD9 /* tabbar-box-default@2x.png */,
-				89FE6478198034D700156FD9 /* tabbar-box-selected@2x.png */,
-				89FE6479198034D700156FD9 /* tabbar-dropbox-default@2x.png */,
-				89CC316719745D3300A9044C /* tabbar-dropbox-selected@2x.png */,
-				89FE647A198034D700156FD9 /* tabbar-googledrive-default@2x.png */,
-				89FE647B198034D700156FD9 /* tabbar-googledrive-selected@2x.png */,
-				89FE647C198034D700156FD9 /* tabbar-settings-default@2x.png */,
-				89FE647D198034D700156FD9 /* tabbar-settings-selected@2x.png */,
-				89FE647E198034D700156FD9 /* tabbar-sky-default@2x.png */,
-				89FE647F198034D700156FD9 /* tabbar-sky-selected@2x.png */,
-				8974836D198777F000C67BBB /* welcome-branding@2x.png */,
+				89C62FC71987D1D700557DBF /* icon-folder-public@2x.png */,
+				89C62F9E1987D18D00557DBF /* btn-bar-button@2x.png */,
+				89C62F9F1987D18D00557DBF /* icon-folder@2x.png */,
+				89C62FA01987D18D00557DBF /* tabbar-box-default@2x.png */,
+				89C62FA11987D18D00557DBF /* tabbar-box-selected@2x.png */,
+				89C62FA21987D18D00557DBF /* tabbar-dropbox-default@2x.png */,
+				89C62FA31987D18D00557DBF /* tabbar-dropbox-selected@2x.png */,
+				89C62FA41987D18D00557DBF /* tabbar-googledrive-default@2x.png */,
+				89C62FA51987D18D00557DBF /* tabbar-googledrive-selected@2x.png */,
+				89C62FA61987D18D00557DBF /* tabbar-settings-default@2x.png */,
+				89C62FA71987D18D00557DBF /* tabbar-settings-selected@2x.png */,
+				89C62FA81987D18D00557DBF /* tabbar-sky-default@2x.png */,
+				89C62FA91987D18D00557DBF /* tabbar-sky-selected@2x.png */,
+				89C62FAA1987D18D00557DBF /* welcome-branding@2x.png */,
 			);
-			name = Retina;
+			path = Retina;
 			sourceTree = "<group>";
 		};
 		89DEE0FF1973DB7E00E905A5 = {
@@ -349,7 +368,7 @@
 		89DEE1121973DB7E00E905A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				89CC315F197458E700A9044C /* Images */,
+				89C62F8E1987D18D00557DBF /* Images */,
 				89DEE11D1973DB7E00E905A5 /* Images.xcassets */,
 				89DEE1131973DB7E00E905A5 /* CloudStorage-Info.plist */,
 				89DEE1141973DB7E00E905A5 /* InfoPlist.strings */,
@@ -385,7 +404,6 @@
 				89FE64A01980351200156FD9 /* CSLoginViewController.xib */,
 				89FE64A11980351200156FD9 /* CSMainViewController.h */,
 				89FE64A21980351200156FD9 /* CSMainViewController.m */,
-				89FE64A31980351200156FD9 /* CSMainViewController.xib */,
 			);
 			name = MainTabController;
 			path = ViewController/MainTabController;
@@ -396,6 +414,8 @@
 			children = (
 				89FE64B31980361B00156FD9 /* CSRootDropboxTableViewController.h */,
 				89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */,
+				89C62FC91987EA2500557DBF /* CSChildDropboxViewController.h */,
+				89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */,
 			);
 			name = DropboxController;
 			sourceTree = "<group>";
@@ -476,39 +496,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C62FC01987D18D00557DBF /* tabbar-settings-default@2x.png in Resources */,
+				89C62FAE1987D18D00557DBF /* tabbar-box-selected.png in Resources */,
+				89C62FC11987D18D00557DBF /* tabbar-settings-selected@2x.png in Resources */,
+				89C62FB91987D18D00557DBF /* icon-folder@2x.png in Resources */,
+				89C62FB01987D18D00557DBF /* tabbar-dropbox-selected.png in Resources */,
 				89432CA91973E707000ABB30 /* CSMainTableCell.xib in Resources */,
-				89FE649A198034E700156FD9 /* tabbar-settings-selected.png in Resources */,
+				89C62FB51987D18D00557DBF /* tabbar-sky-default.png in Resources */,
+				89C62FB11987D18D00557DBF /* tabbar-googledrive-default.png in Resources */,
+				89C62FB71987D18D00557DBF /* welcome-branding.png in Resources */,
+				89C62FC81987D1D700557DBF /* icon-folder-public@2x.png in Resources */,
+				89C62FBC1987D18D00557DBF /* tabbar-dropbox-default@2x.png in Resources */,
+				89C62FBB1987D18D00557DBF /* tabbar-box-selected@2x.png in Resources */,
+				89C62FAC1987D18D00557DBF /* icon-folder.png in Resources */,
+				89C62FBA1987D18D00557DBF /* tabbar-box-default@2x.png in Resources */,
 				89FE64721980342B00156FD9 /* CSFourViewController.xib in Resources */,
-				89FE6482198034D700156FD9 /* tabbar-dropbox-default@2x.png in Resources */,
-				89FE6487198034D700156FD9 /* tabbar-sky-default@2x.png in Resources */,
-				89FE6483198034D700156FD9 /* tabbar-googledrive-default@2x.png in Resources */,
 				89FE64701980342B00156FD9 /* CSFiveViewController.xib in Resources */,
-				89FE6499198034E700156FD9 /* tabbar-settings-default.png in Resources */,
-				89FE6495198034E700156FD9 /* tabbar-dropbox-default.png in Resources */,
-				89FE649C198034E700156FD9 /* tabbar-sky-selected.png in Resources */,
 				89FE646E1980342B00156FD9 /* CSFirstViewController.xib in Resources */,
-				89FE6493198034E700156FD9 /* tabbar-box-default.png.png in Resources */,
-				89FE6498198034E700156FD9 /* tabbar-googledrive-seleted.png in Resources */,
-				89FE6484198034D700156FD9 /* tabbar-googledrive-selected@2x.png in Resources */,
+				89C62FC21987D18D00557DBF /* tabbar-sky-default@2x.png in Resources */,
+				89C62FC61987D1CF00557DBF /* icon-folder-public.png in Resources */,
+				89C62FAF1987D18D00557DBF /* tabbar-dropbox-default.png in Resources */,
+				89C62FAB1987D18D00557DBF /* btn-bar-button.png in Resources */,
+				89C62FB31987D18D00557DBF /* tabbar-settings-default.png in Resources */,
+				89C62FB41987D18D00557DBF /* tabbar-settings-selected.png in Resources */,
+				89C62FBE1987D18D00557DBF /* tabbar-googledrive-default@2x.png in Resources */,
 				89DEE1161973DB7E00E905A5 /* InfoPlist.strings in Resources */,
-				89FE64A71980351200156FD9 /* CSMainViewController.xib in Resources */,
-				89FE649B198034E700156FD9 /* tabbar-sky-default.png in Resources */,
+				89C62FB81987D18D00557DBF /* btn-bar-button@2x.png in Resources */,
+				89C62FBD1987D18D00557DBF /* tabbar-dropbox-selected@2x.png in Resources */,
+				89C62FB61987D18D00557DBF /* tabbar-sky-selected.png in Resources */,
+				89C62FB21987D18D00557DBF /* tabbar-googledrive-seleted.png in Resources */,
+				89C62FBF1987D18D00557DBF /* tabbar-googledrive-selected@2x.png in Resources */,
+				89C62FC31987D18D00557DBF /* tabbar-sky-selected@2x.png in Resources */,
 				89FE64741980342B00156FD9 /* CSSecondViewController.xib in Resources */,
-				89FE6485198034D700156FD9 /* tabbar-settings-default@2x.png in Resources */,
+				89C62FC41987D18D00557DBF /* welcome-branding@2x.png in Resources */,
 				89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */,
 				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
-				89FE6486198034D700156FD9 /* tabbar-settings-selected@2x.png in Resources */,
-				89FE6480198034D700156FD9 /* tabbar-box-default@2x.png in Resources */,
-				89FE6496198034E700156FD9 /* tabbar-dropbox-selected.png in Resources */,
 				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
-				89FE6497198034E700156FD9 /* tabbar-googledrive-default.png in Resources */,
-				89748370198777FF00C67BBB /* welcome-branding.png in Resources */,
-				8974836E198777F000C67BBB /* welcome-branding@2x.png in Resources */,
-				89FE6488198034D700156FD9 /* tabbar-sky-selected@2x.png in Resources */,
+				89C62FAD1987D18D00557DBF /* tabbar-box-default.png.png in Resources */,
 				89FE64761980342B00156FD9 /* CSThirdViewController.xib in Resources */,
-				89CC316819745D3300A9044C /* tabbar-dropbox-selected@2x.png in Resources */,
-				89FE6494198034E700156FD9 /* tabbar-box-selected.png in Resources */,
-				89FE6481198034D700156FD9 /* tabbar-box-selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +559,7 @@
 				89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */,
 				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
 				89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */,
+				89C62FCB1987EA2500557DBF /* CSChildDropboxViewController.m in Sources */,
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
 				89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */,
 				89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */,

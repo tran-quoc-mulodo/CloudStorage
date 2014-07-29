@@ -8,7 +8,7 @@
 
 #import "CSMainViewController.h"
 
-@interface CSMainViewController ()
+@interface CSMainViewController () <UITabBarControllerDelegate>
 
 @end
 
@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    [self setDelegate:self];
 }
 
 - (BOOL)shouldAutorotate {
@@ -38,6 +38,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    if ([tabBarController.selectedViewController isEqual:viewController]) {
+        return NO;
+    }
+    return YES;
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    
 }
 
 @end

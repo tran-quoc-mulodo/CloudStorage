@@ -12,6 +12,7 @@
 @interface CSRootDropboxTableViewController : CSBaseTableViewController <DBRestClientDelegate> {
     DBRestClient            *_restClient;
     NSArray                 *_metaDataContent;
+    NSString                *_path;
 }
 
 @end

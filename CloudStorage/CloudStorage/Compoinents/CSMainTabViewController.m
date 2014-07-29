@@ -67,6 +67,7 @@
     [[[self.viewControllers objectAtIndex:3] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-sky-selected.png"]];
     
     [[[self.viewControllers objectAtIndex:4] tabBarItem] setImage:[UIImage imageNamed:@"tabbar-settings-selected.png"]];
+    
 }
 
 - (void)didReceiveMemoryWarning

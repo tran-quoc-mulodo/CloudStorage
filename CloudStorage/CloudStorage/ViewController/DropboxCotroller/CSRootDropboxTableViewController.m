@@ -23,6 +23,7 @@
         // Custom initialization
         _restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
         _restClient.delegate = self;
+        _path = @"/";
     }
     return self;
 }
@@ -31,7 +32,13 @@
     [super viewDidLoad];
     [self.navigationItem setHidesBackButton:YES];
     [self.navigationItem setTitle:@"Dropbox"];
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn-bar-button.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(actionBarButtonItem:)];
+    self.navigationItem.rightBarButtonItem = rightBarButton;
     // Do any additional setup after loading the view from its nib.
+    [self loadRootFolderOfDropbox];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
     [self loadRootFolderOfDropbox];
 }
 
@@ -46,7 +53,7 @@
 }
 
 #pragma mark -
-#pragma mark delege apis reponse methods
+#pragma mark delege restClients reponse methods
 
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
     if (metadata.isDirectory) {
@@ -72,7 +79,7 @@
 }
 
 - (void)loadRootFolderOfDropbox {
-    [_restClient loadMetadata:@"/"];
+    [_restClient loadMetadata:_path];
 }
 
 #pragma mark -
@@ -99,6 +106,20 @@
     
     // Configure the cell...
     DBMetadata *object = [_metaDataContent objectAtIndex:indexPath.row];
+    if (object.isDirectory) {
+        if ([object.filename isEqualToString:@"Public"]) {
+            [cell.imageView setImage:[UIImage imageNamed:@"icon-folder-public.png"]];
+        } else {
+            [cell.imageView setImage:[UIImage imageNamed:@"icon-folder.png"]];
+        }
+    } else if ([object.icon isEqualToString:@"page_white_picture"]) {
+        
+    } else {
+        DEBUG_LOG(@"%@", object.icon);
+        [cell.imageView setImage:nil];
+    }
+    
+    [cell.textLabel setFont:[UIFont boldSystemFontOfSize:14.0f]];
     [cell.textLabel setText:object.filename];
     
     return cell;
