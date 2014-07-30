@@ -44,7 +44,6 @@
 		89C62FC41987D18D00557DBF /* welcome-branding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FAA1987D18D00557DBF /* welcome-branding@2x.png */; };
 		89C62FC61987D1CF00557DBF /* icon-folder-public.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FC51987D1CF00557DBF /* icon-folder-public.png */; };
 		89C62FC81987D1D700557DBF /* icon-folder-public@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62FC71987D1D700557DBF /* icon-folder-public@2x.png */; };
-		89C62FCB1987EA2500557DBF /* CSChildDropboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */; };
 		89DEE10C1973DB7E00E905A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10B1973DB7E00E905A5 /* Foundation.framework */; };
 		89DEE10E1973DB7E00E905A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */; };
 		89DEE1101973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
@@ -126,8 +125,6 @@
 		89C62FAA1987D18D00557DBF /* welcome-branding@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-branding@2x.png"; sourceTree = "<group>"; };
 		89C62FC51987D1CF00557DBF /* icon-folder-public.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder-public.png"; sourceTree = "<group>"; };
 		89C62FC71987D1D700557DBF /* icon-folder-public@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-folder-public@2x.png"; sourceTree = "<group>"; };
-		89C62FC91987EA2500557DBF /* CSChildDropboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSChildDropboxViewController.h; path = ViewController/DropboxCotroller/CSChildDropboxViewController.h; sourceTree = "<group>"; };
-		89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSChildDropboxViewController.m; path = ViewController/DropboxCotroller/CSChildDropboxViewController.m; sourceTree = "<group>"; };
 		89DEE1081973DB7E00E905A5 /* CloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEE10B1973DB7E00E905A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89DEE10D1973DB7E00E905A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -414,8 +411,6 @@
 			children = (
 				89FE64B31980361B00156FD9 /* CSRootDropboxTableViewController.h */,
 				89FE64B41980361B00156FD9 /* CSRootDropboxTableViewController.m */,
-				89C62FC91987EA2500557DBF /* CSChildDropboxViewController.h */,
-				89C62FCA1987EA2500557DBF /* CSChildDropboxViewController.m */,
 			);
 			name = DropboxController;
 			sourceTree = "<group>";
@@ -559,7 +554,6 @@
 				89432C811973DEED000ABB30 /* CSMainTableCell.m in Sources */,
 				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
 				89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */,
-				89C62FCB1987EA2500557DBF /* CSChildDropboxViewController.m in Sources */,
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
 				89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */,
 				89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */,

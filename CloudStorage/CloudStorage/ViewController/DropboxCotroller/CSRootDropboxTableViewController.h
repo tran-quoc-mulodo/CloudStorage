@@ -13,6 +13,10 @@
     DBRestClient            *_restClient;
     NSArray                 *_metaDataContent;
     NSString                *_path;
+    BOOL                    _isRoot;
 }
+
+@property (nonatomic, strong) NSString *path;
+@property (nonatomic, assign) BOOL  isRoot;
 
 @end

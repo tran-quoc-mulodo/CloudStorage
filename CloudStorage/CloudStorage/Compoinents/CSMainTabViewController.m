@@ -33,6 +33,7 @@
     [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,
                                                           nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     _controller1 = [[CSFirstViewController alloc] initWithNibName:@"CSFirstViewController" bundle:nil];
     [_controller1 setTitle:@"Dropbox"];
