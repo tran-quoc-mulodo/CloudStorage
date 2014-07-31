@@ -14,6 +14,9 @@
     NSArray                 *_metaDataContent;
     NSString                *_path;
     BOOL                    _isRoot;
+    BOOL                    _isLoadThumbnail;
+    NSInteger               _numberFile;
+    NSInteger               _numberFolder;
 }
 
 @property (nonatomic, strong) NSString *path;

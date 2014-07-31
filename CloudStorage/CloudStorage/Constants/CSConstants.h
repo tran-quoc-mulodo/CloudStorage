@@ -27,6 +27,7 @@ typedef enum {
 
 // Color
 #define kCSNavigationBackgroundColor [UIColor colorWithRed:37.0f/255.0f green:135.0f/255.0f blue:193.0f/255.0f alpha:1.0]
+#define kCSSearchBarBackgroundColor [UIColor colorWithRed:237.0f/255.0f green:237.0f/255.0f blue:237.0f/255.0f alpha:0.5]
 
 
 // Constants

@@ -49,6 +49,10 @@
 #pragma mark -
 #pragma mark Action view methods
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 - (void)configView {
     if([[DBSession sharedSession] isLinked]) {
         if (!_rootViewDropbox) {
