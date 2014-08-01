@@ -23,18 +23,29 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // search bar
+    if (_isNeedSearch) {
+        _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 35)];
+        [_searchBar sizeToFit];
+        _searchBar.delegate = self;
+        self.tableView.tableHeaderView = _searchBar;
+        [self.tableView setContentOffset:CGPointMake(0, 35)];
+        searchDisplayController = [[UISearchDisplayController alloc] initWithSearchBar:_searchBar contentsController:self];
+        searchDisplayController.delegate = self;
+        searchDisplayController.searchResultsDataSource = self;
+        searchDisplayController.searchResultsDelegate = self;
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    searchDisplayController = nil;
 }
 
 #pragma mark - Table view data source

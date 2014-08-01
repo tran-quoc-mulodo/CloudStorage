@@ -8,15 +8,18 @@
 
 #import "CSBaseTableViewController.h"
 #import <DropboxSDK/DropboxSDK.h>
+#import "NSDate+HumanizedTime.h"
 
-@interface CSRootDropboxTableViewController : CSBaseTableViewController <DBRestClientDelegate> {
+@interface CSRootDropboxTableViewController : CSBaseTableViewController <DBRestClientDelegate, UISearchBarDelegate, UISearchDisplayDelegate> {
     DBRestClient            *_restClient;
     NSArray                 *_metaDataContent;
-    NSString                *_path;
+    NSArray                 *_metaDataContentSearch;
     BOOL                    _isRoot;
-    BOOL                    _isLoadThumbnail;
     NSInteger               _numberFile;
     NSInteger               _numberFolder;
+    NSInteger               _numberFileSearch;
+    NSInteger               _numberFolderSearch;
+    NSDateHumanizedType     _humanizedType;
 }
 
 @property (nonatomic, strong) NSString *path;

@@ -54,10 +54,12 @@
 		8928E19E198A7EB800E6C9E7 /* page_white_word@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8928E187198A7EB800E6C9E7 /* page_white_word@2x.png */; };
 		8928E19F198A7EB800E6C9E7 /* page_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8928E188198A7EB800E6C9E7 /* page_white@2x.png */; };
 		8928E1A1198A82DB00E6C9E7 /* CSMainTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8928E1A0198A82DB00E6C9E7 /* CSMainTableCell.xib */; };
+		8928E421198B3F3700C482B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8928E41B198B3F3700C482B2 /* Localizable.strings */; };
+		8928E422198B3F3700C482B2 /* Localizable_full.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8928E41D198B3F3700C482B2 /* Localizable_full.strings */; };
+		8928E425198B3F5500C482B2 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */; };
 		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
 		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
-		89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
 		89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1F039197E9D55007A695B /* DropboxSDK.framework */; };
@@ -172,6 +174,12 @@
 		8928E187198A7EB800E6C9E7 /* page_white_word@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_white_word@2x.png"; sourceTree = "<group>"; };
 		8928E188198A7EB800E6C9E7 /* page_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "page_white@2x.png"; sourceTree = "<group>"; };
 		8928E1A0198A82DB00E6C9E7 /* CSMainTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMainTableCell.xib; sourceTree = "<group>"; };
+		8928E41C198B3F3700C482B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8928E41E198B3F3700C482B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable_full.strings; sourceTree = "<group>"; };
+		8928E41F198B3F3700C482B2 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8928E420198B3F3700C482B2 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Localizable_full.strings"; sourceTree = "<group>"; };
+		8928E423198B3F5500C482B2 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
+		8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
 		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
 		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
 		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
@@ -179,7 +187,6 @@
 		89432C781973DE9B000ABB30 /* CSMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainTabViewController.m; path = Compoinents/CSMainTabViewController.m; sourceTree = "<group>"; };
 		89432C7A1973DEB7000ABB30 /* CSBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSBaseTableViewController.h; path = Compoinents/CSBaseTableViewController.h; sourceTree = "<group>"; };
 		89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSBaseTableViewController.m; path = Compoinents/CSBaseTableViewController.m; sourceTree = "<group>"; };
-		89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSBaseTableViewController.xib; path = Compoinents/CSBaseTableViewController.xib; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		89C1F039197E9D55007A695B /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
@@ -217,8 +224,8 @@
 		89DEE1151973DB7E00E905A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89DEE1171973DB7E00E905A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		89DEE1191973DB7E00E905A5 /* CloudStorage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudStorage-Prefix.pch"; sourceTree = "<group>"; };
-		89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
-		89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSAppDelegate.h; path = CloudStorage/CSAppDelegate.h; sourceTree = "<group>"; };
+		89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CSAppDelegate.m; path = CloudStorage/CSAppDelegate.m; sourceTree = "<group>"; };
 		89DEE11D1973DB7E00E905A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DEE1231973DB7E00E905A5 /* CloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DEE1241973DB7E00E905A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -276,6 +283,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8928E409198B3E8400C482B2 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				8928E41A198B3F3700C482B2 /* HumanizedTime */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		8928E41A198B3F3700C482B2 /* HumanizedTime */ = {
+			isa = PBXGroup;
+			children = (
+				8928E41B198B3F3700C482B2 /* Localizable.strings */,
+				8928E41D198B3F3700C482B2 /* Localizable_full.strings */,
+				8928E423198B3F5500C482B2 /* NSDate+HumanizedTime.h */,
+				8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */,
+			);
+			path = HumanizedTime;
+			sourceTree = "<group>";
+		};
 		89432C671973DD28000ABB30 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,13 +310,6 @@
 				89FE649D1980351200156FD9 /* MainTabController */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		89432C681973DD57000ABB30 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Libraries;
 			sourceTree = "<group>";
 		};
 		89432C691973DD66000ABB30 /* Models */ = {
@@ -305,7 +324,6 @@
 			children = (
 				89432C7A1973DEB7000ABB30 /* CSBaseTableViewController.h */,
 				89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */,
-				89432C7C1973DEB7000ABB30 /* CSBaseTableViewController.xib */,
 				89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */,
 				89432C701973DE3D000ABB30 /* CSMainNavigationController.m */,
 				89432C771973DE9B000ABB30 /* CSMainTabViewController.h */,
@@ -444,6 +462,9 @@
 			isa = PBXGroup;
 			children = (
 				89DEE1111973DB7E00E905A5 /* CloudStorage */,
+				89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */,
+				89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */,
+				89DEE1121973DB7E00E905A5 /* Supporting Files */,
 				89DEE12A1973DB7E00E905A5 /* CloudStorageTests */,
 				89DEE10A1973DB7E00E905A5 /* Frameworks */,
 				89DEE1091973DB7E00E905A5 /* Products */,
@@ -476,14 +497,11 @@
 		89DEE1111973DB7E00E905A5 /* CloudStorage */ = {
 			isa = PBXGroup;
 			children = (
-				89432C6B1973DD83000ABB30 /* Constants */,
 				89432C6A1973DD72000ABB30 /* Compoinents */,
+				89432C6B1973DD83000ABB30 /* Constants */,
+				8928E409198B3E8400C482B2 /* Libraries */,
 				89432C691973DD66000ABB30 /* Models */,
-				89432C681973DD57000ABB30 /* Libraries */,
 				89432C671973DD28000ABB30 /* ViewController */,
-				89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */,
-				89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */,
-				89DEE1121973DB7E00E905A5 /* Supporting Files */,
 			);
 			path = CloudStorage;
 			sourceTree = "<group>";
@@ -499,6 +517,7 @@
 				89DEE1191973DB7E00E905A5 /* CloudStorage-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = CloudStorage;
 			sourceTree = "<group>";
 		};
 		89DEE12A1973DB7E00E905A5 /* CloudStorageTests */ = {
@@ -600,6 +619,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"vi-VN",
 			);
 			mainGroup = 89DEE0FF1973DB7E00E905A5;
 			productRefGroup = 89DEE1091973DB7E00E905A5 /* Products */;
@@ -619,8 +639,10 @@
 			files = (
 				89C62FC01987D18D00557DBF /* tabbar-settings-default@2x.png in Resources */,
 				89C62FAE1987D18D00557DBF /* tabbar-box-selected.png in Resources */,
+				8928E422198B3F3700C482B2 /* Localizable_full.strings in Resources */,
 				8928E15E198A7EAA00E6C9E7 /* folder_user_locked.png in Resources */,
 				8928E15D198A7EAA00E6C9E7 /* folder_public.png in Resources */,
+				8928E421198B3F3700C482B2 /* Localizable.strings in Resources */,
 				89C62FC11987D18D00557DBF /* tabbar-settings-selected@2x.png in Resources */,
 				89C62FB01987D18D00557DBF /* tabbar-dropbox-selected.png in Resources */,
 				8928E18E198A7EB800E6C9E7 /* folder@2x.png in Resources */,
@@ -686,7 +708,6 @@
 				89C62FC41987D18D00557DBF /* welcome-branding@2x.png in Resources */,
 				89FE64A51980351200156FD9 /* CSLoginViewController.xib in Resources */,
 				8928E19A198A7EB800E6C9E7 /* page_white_sound@2x.png in Resources */,
-				89432C7E1973DEB7000ABB30 /* CSBaseTableViewController.xib in Resources */,
 				8928E192198A7EB800E6C9E7 /* page_white_dvd@2x.png in Resources */,
 				89DEE11E1973DB7E00E905A5 /* Images.xcassets in Resources */,
 				8928E199198A7EB800E6C9E7 /* page_white_powerpoint@2x.png in Resources */,
@@ -720,6 +741,7 @@
 				89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */,
 				89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */,
 				89FE64731980342B00156FD9 /* CSSecondViewController.m in Sources */,
+				8928E425198B3F5500C482B2 /* NSDate+HumanizedTime.m in Sources */,
 				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
 				89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */,
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
@@ -751,6 +773,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8928E41B198B3F3700C482B2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8928E41C198B3F3700C482B2 /* en */,
+				8928E41F198B3F3700C482B2 /* vi-VN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8928E41D198B3F3700C482B2 /* Localizable_full.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8928E41E198B3F3700C482B2 /* en */,
+				8928E420198B3F3700C482B2 /* vi-VN */,
+			);
+			name = Localizable_full.strings;
+			sourceTree = "<group>";
+		};
 		89DEE1141973DB7E00E905A5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

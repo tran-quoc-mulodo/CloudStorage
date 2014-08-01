@@ -18,14 +18,18 @@
 #pragma mark -
 #pragma mark LifeCircle methods
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
     if (self) {
+        // Custom initialization
         // Custom initialization
         _restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
         _restClient.delegate = self;
         _path = @"/";
         _isRoot = YES;
+        _isNeedSearch = YES;
     }
     return self;
 }
@@ -33,6 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationItem setTitle:@"Dropbox"];
+    _humanizedType = NSDateHumanizedSuffixAgo;
     if (_isRoot) {
         [self.navigationItem setHidesBackButton:YES];
     } else {
@@ -42,7 +47,12 @@
     
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"btn-bar-button.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(actionBarButtonItem:)];
     self.navigationItem.rightBarButtonItem = rightBarButton;
-    // Do any additional setup after loading the view from its nib.
+    
+    if (_isRoot) {
+        [_searchBar setPlaceholder:@"Search"];
+    } else {
+        [_searchBar setPlaceholder:@"Search this Folder"];
+    }
     
     // check internet then load from local or load from server directly
     [self loadTreesFolderOfDropboxWithPath];
@@ -71,6 +81,7 @@
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
     if (metadata.isDirectory) {
         _metaDataContent = metadata.contents;
+        [self.tableView reloadData];
         [self configTitleOfView];
         for (DBMetadata *file in metadata.contents) {
             if (file.isDirectory) {
@@ -83,12 +94,15 @@
                 [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
             }
         }
+        
+        // add footer couter item
+        [self updateFooterOfTableView];
         [self.tableView reloadData];
     }
 }
 
 - (void)restClient:(DBRestClient *)client loadMetadataFailedWithError:(NSError *)error {
-    DEBUG_LOG(@"Error loading metadata: %@", error);
+//    DEBUG_LOG(@"Error loading metadata: %@", error);
     // config view when load root folder error
     
 }
@@ -104,6 +118,31 @@
     
 }
 
+// search
+- (void)restClient:(DBRestClient*)restClient loadedSearchResults:(NSArray*)results
+           forPath:(NSString*)path keyword:(NSString*)keyword {
+    _metaDataContentSearch = results;
+    for (DBMetadata *file in results) {
+        if (file.isDirectory) {
+            _numberFolderSearch++;
+        } else {
+            _numberFileSearch++;
+        }
+        if (file.thumbnailExists) {
+            NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
+            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
+        }
+    }
+    
+    [searchDisplayController.searchResultsTableView reloadData];
+    // add footer couter item
+    [self updateFooterOfTableView];
+}
+// results is a list of DBMetadata * objects
+- (void)restClient:(DBRestClient*)restClient searchFailedWithError:(NSError*)error {
+    
+}
+
 
 #pragma mark -
 #pragma mark files and folders methods
@@ -113,17 +152,60 @@
     
 }
 
+- (NSString *)returnNameMainPath {
+    NSInteger value = 0;
+    for (NSInteger i = _path.length - 1; i >= 0; i--) {
+        char charactor = [_path characterAtIndex:i];
+        if (charactor == '/') {
+            value = i + 1;
+            break;
+        }
+    }
+    
+    return [_path substringFromIndex:value];
+}
+
+- (void)updateFooterOfTableView {
+    if (_isSearchMode) {
+        if ([_metaDataContentSearch count] > 12) {
+            UILabel *laberCouter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+            if (_numberFolderSearch == 0) {
+                [laberCouter setText:[NSString stringWithFormat:@"%lu Files", (unsigned long)[_metaDataContentSearch count]]];
+            } else if (_numberFileSearch == 0) {
+                [laberCouter setText:[NSString stringWithFormat:@"%lu Folders", (unsigned long)[_metaDataContentSearch count]]];
+            } else {
+                [laberCouter setText:[NSString stringWithFormat:@"%ld Files, %ld Folders", (long)_numberFileSearch, (long)_numberFolderSearch]];
+            }
+            [laberCouter setFont:[UIFont systemFontOfSize:15.0f]];
+            [laberCouter setTextColor:[UIColor darkGrayColor]];
+            [laberCouter setTextAlignment:NSTextAlignmentCenter];
+            searchDisplayController.searchResultsTableView.tableFooterView = laberCouter;
+        } else {
+            searchDisplayController.searchResultsTableView.tableFooterView = nil;
+        }
+    } else {
+        if ([_metaDataContent count] > 12) {
+            UILabel *laberCouter = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 30)];
+            if (_numberFolder == 0) {
+                [laberCouter setText:[NSString stringWithFormat:@"%lu Files", (unsigned long)[_metaDataContent count]]];
+            } else if (_numberFile == 0) {
+                [laberCouter setText:[NSString stringWithFormat:@"%lu Folders", (unsigned long)[_metaDataContent count]]];
+            } else {
+                [laberCouter setText:[NSString stringWithFormat:@"%ld Files, %ld Folders", (long)_numberFile, (long)_numberFolder]];
+            }
+            [laberCouter setFont:[UIFont systemFontOfSize:15.0f]];
+            [laberCouter setTextColor:[UIColor darkGrayColor]];
+            [laberCouter setTextAlignment:NSTextAlignmentCenter];
+            self.tableView.tableFooterView = laberCouter;
+        } else {
+            self.tableView.tableFooterView = nil;
+        }
+    }
+}
+
 - (void)configTitleOfView {
     if (!_isRoot) {
-        int value = 0;
-        for (int i = _path.length - 1; i >= 0; i--) {
-            char charactor = [_path characterAtIndex:i];
-            if (charactor == '/') {
-                value = i + 1;
-                break;
-            }
-        }
-        [self.navigationItem setTitle:[_path substringFromIndex:value]];
+        [self.navigationItem setTitle:[self returnNameMainPath]];
     }
 }
 
@@ -131,71 +213,30 @@
     [_restClient loadMetadata:_path];
 }
 
+- (void)loadSearchByPath:(NSString *)path andSearchString:(NSString *)searchString {
+    [_restClient searchPath:path forKeyword:searchString];
+}
+
 #pragma mark -
 #pragma mark tableView delegate and data source methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    if(_metaDataContent) {
-        return 1;
-    }
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    if ([_metaDataContent count] > 12) {
-        return [_metaDataContent count] + 2;
+    if (_isSearchMode) {
+        return [_metaDataContentSearch count];
+    } else {
+        return [_metaDataContent count];
     }
-    return [_metaDataContent count];
 }
 
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        static NSString *CellIdentifier = @"CellSearch";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        }
-        
-        UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
-        if (_isRoot) {
-            [searchBar setPlaceholder:@"Search"];
-        } else {
-            [searchBar setPlaceholder:@"Search this Folder"];
-        }
-        [searchBar setBarTintColor:kCSSearchBarBackgroundColor];
-        
-        [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil] setTintColor:kCSNavigationBackgroundColor];
-        
-        [cell.contentView addSubview:searchBar];
-        return cell;
-    }
-    
-    if (indexPath.row >= [_metaDataContent count] + 1) {
-        static NSString *CellIdentifier = @"CellCount";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        }
-        
-        if (_numberFolder == 0) {
-            [cell.textLabel setText:[NSString stringWithFormat:@"%d Files", [_metaDataContent count]]];
-        } else if (_numberFile == 0) {
-            [cell.textLabel setText:[NSString stringWithFormat:@"%d Folders", [_metaDataContent count]]];
-        } else {
-            [cell.textLabel setText:[NSString stringWithFormat:@"%d Files, %d Folders", _numberFile, _numberFolder]];
-        }
-        [cell.textLabel setFont:[UIFont systemFontOfSize:15.0f]];
-        [cell.textLabel setTextColor:[UIColor darkGrayColor]];
-        [cell.textLabel setTextAlignment:NSTextAlignmentCenter];
-        return cell;
-    }
-    
     static NSString *CellIdentifier = @"DropboxCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -203,9 +244,14 @@
     }
     
     // Configure the cell...
-    DBMetadata *file = [_metaDataContent objectAtIndex:indexPath.row - 1];
+    DBMetadata *file = nil;
+    if (_isSearchMode) {
+        file = [_metaDataContentSearch objectAtIndex:indexPath.row];
+    } else {
+        file = [_metaDataContent objectAtIndex:indexPath.row];
+    }
+    
     if (file.thumbnailExists) {
-        // get thumbnail
         [cell.imageView setImage:[UIImage imageNamed:@"page_white_picture.png"]];
         NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
         UIImage *image_icon = [UIImage imageWithContentsOfFile:destinationPath];
@@ -218,8 +264,9 @@
     
     if (!file.isDirectory) {
         [cell.detailTextLabel setTextColor:[UIColor darkGrayColor]];
-        [cell.detailTextLabel setText:file.humanReadableSize];
         [cell.detailTextLabel setFont:[UIFont systemFontOfSize:11.0f]];
+        NSString *stringOfDate = [file.lastModifiedDate stringWithHumanizedTimeDifference:_humanizedType withFullString:YES];
+        [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@ modified %@", file.humanReadableSize, stringOfDate]];
     } else {
         [cell.detailTextLabel setText:nil];
     }
@@ -234,17 +281,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row >= [_metaDataContent count] + 1 || indexPath.row == 0) {
-        return;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DBMetadata *file = nil;
+    if (_isSearchMode) {
+        file = [_metaDataContentSearch objectAtIndex:indexPath.row];
+    } else {
+        file = [_metaDataContent objectAtIndex:indexPath.row];
     }
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    DBMetadata *file = [_metaDataContent objectAtIndex:indexPath.row - 1];
     if (file.isDirectory) {
         // push to child folder
         CSRootDropboxTableViewController *viewController = [[CSRootDropboxTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        [viewController setPath:[NSString stringWithFormat:@"%@", file.path]];
         [viewController setIsRoot:NO];
+        [viewController setPath:[NSString stringWithFormat:@"%@", file.path]];
         [self.navigationController pushViewController:viewController animated:YES];
     } else {
         // review file
@@ -252,12 +301,33 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        return 40.0f;
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
+    if (searchString.length == 0) {
+        [controller.searchResultsTableView reloadData];
+        _metaDataContentSearch = nil;
+        _numberFileSearch = 0;
+        _numberFolderSearch = 0;
+        searchDisplayController.searchResultsTableView.tableFooterView = nil;
+        _isSearchMode = NO;
+        [self.tableView reloadData];
     } else {
-        return 44.0f;
+        _isSearchMode = YES;
+        [self loadSearchByPath:_path andSearchString:searchString];
     }
+    return YES;
+}
+
+- (void) searchDisplayControllerWillBeginSearch:(UISearchDisplayController *)controller {
+    _numberFileSearch = 0;
+    _numberFolderSearch = 0;
+    _isSearchMode = YES;
+}
+
+- (void) searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller {
+    _metaDataContentSearch = nil;
+    [self updateFooterOfTableView];
+    _isSearchMode = NO;
+    [self.tableView reloadData];
 }
 
 

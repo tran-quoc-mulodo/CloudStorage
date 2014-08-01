@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSBaseTableViewController : UITableViewController
+@interface CSBaseTableViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate> {
+    BOOL                            _isNeedSearch;
+    BOOL                            _isSearchMode;
+    UISearchBar                     *_searchBar;
+    UISearchDisplayController       *searchDisplayController;
+}
+
+@property (nonatomic, assign) BOOL isNeedSearch;
 
 @end
