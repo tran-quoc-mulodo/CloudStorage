@@ -19,10 +19,26 @@ typedef enum {
 #define kCSDroboxSessionTitle               @"Dropbox Session Ended"
 #define kCSDroboxSessionMessage             @"Do you want to relink?"
 #define kCSDroboxSessionRelink              @"Relink"
+#define kCSDroboxPlaceHolderSearch          @"Search"
+#define kCSDroboxPlaceHolderSearchFolder    @"Search this Folder"
+#define kCSDroboxButtonLinkTitle            @"Link to Dropbox"
+#define kCSDroboxButtonUnLinkTitle          @"Unlink this account"
 
+// Message Setting
+#define kCSNumberVersion                    @"1.0"
+#define kCSPasscodeLock                     @"Passcode Lock"
+#define kCSPasscodeBoolOn                   @"On"
+#define kCSPasscodeBoolOff                  @"Off"
+#define kCSLegalPrivacy                     @"Legal & Privacy"
+#define kCSAppVersion                       @"App Version"
+#define kCSShareApptoFacebook               @"Share CloudStorage to Facebook!"
+#define kCSShareApptoTwitter                @"Share CloudStorage to Twitter!"
+#define kCSEmail                            @"Email"
+#define kCSSpaceUsed                        @"Space Used"
 
 // Singleton
-#define kCSAppDelegate    (CSAppDelegate*)[[UIApplication sharedApplication] delegate]
+#define kCSAppDelegate                  (CSAppDelegate*)[[UIApplication sharedApplication] delegate]
+#define kCSManagerAccount               [CSManagerAccount instance]
 
 
 // Color
@@ -31,5 +47,9 @@ typedef enum {
 
 
 // Constants
-
 #define kCSTitleCancel                      @"Cancel"
+#define kCSTitleTab1                        @"Dropbox"
+#define kCSTitleTab2                        @"Box"
+#define kCSTitleTab3                        @"Google Drive"
+#define kCSTitleTab4                        @"Sky Drive"
+#define kCSTitleTab5                        @"Setting"

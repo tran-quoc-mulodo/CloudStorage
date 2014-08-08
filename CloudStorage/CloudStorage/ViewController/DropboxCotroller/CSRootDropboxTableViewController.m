@@ -24,7 +24,6 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        // Custom initialization
         _restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
         _restClient.delegate = self;
         _path = @"/";
@@ -36,7 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationItem setTitle:@"Dropbox"];
+    [self.navigationItem setTitle:kCSTitleTab1];
     _humanizedType = NSDateHumanizedSuffixAgo;
     if (_isRoot) {
         [self.navigationItem setHidesBackButton:YES];
@@ -49,9 +48,9 @@
     self.navigationItem.rightBarButtonItem = rightBarButton;
     
     if (_isRoot) {
-        [_searchBar setPlaceholder:@"Search"];
+        [_searchBar setPlaceholder:kCSDroboxPlaceHolderSearch];
     } else {
-        [_searchBar setPlaceholder:@"Search this Folder"];
+        [_searchBar setPlaceholder:kCSDroboxPlaceHolderSearchFolder];
     }
     
     // check internet then load from local or load from server directly
@@ -69,9 +68,12 @@
 }
 
 - (void)dealloc {
+    [_searchBar removeFromSuperview];
     _restClient = nil;
     _metaDataContent = nil;
     _path = nil;
+    _searchBar = nil;
+    searchDisplayController = nil;
 }
 
 #pragma mark -
@@ -102,7 +104,6 @@
 }
 
 - (void)restClient:(DBRestClient *)client loadMetadataFailedWithError:(NSError *)error {
-//    DEBUG_LOG(@"Error loading metadata: %@", error);
     // config view when load root folder error
     
 }
@@ -296,7 +297,7 @@
         [viewController setPath:[NSString stringWithFormat:@"%@", file.path]];
         [self.navigationController pushViewController:viewController animated:YES];
     } else {
-        // review file
+        // review file if avalable
         
     }
 }

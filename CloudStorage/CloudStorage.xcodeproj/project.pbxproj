@@ -57,6 +57,7 @@
 		8928E421198B3F3700C482B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8928E41B198B3F3700C482B2 /* Localizable.strings */; };
 		8928E422198B3F3700C482B2 /* Localizable_full.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8928E41D198B3F3700C482B2 /* Localizable_full.strings */; };
 		8928E425198B3F5500C482B2 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */; };
+		8938FD04198BE73B00F83B42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938FD03198BE73B00F83B42 /* QuartzCore.framework */; };
 		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
 		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
@@ -100,6 +101,7 @@
 		89DEE1271973DB7E00E905A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DEE10F1973DB7E00E905A5 /* UIKit.framework */; };
 		89DEE12F1973DB7E00E905A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */; };
 		89DEE1311973DB7E00E905A5 /* CloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */; };
+		89E7B96C1993E7EE001B4E88 /* CSManagerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */; };
 		89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE645F1980342B00156FD9 /* CSFirstViewController.m */; };
 		89FE646E1980342B00156FD9 /* CSFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64601980342B00156FD9 /* CSFirstViewController.xib */; };
 		89FE646F1980342B00156FD9 /* CSFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64621980342B00156FD9 /* CSFiveViewController.m */; };
@@ -180,6 +182,7 @@
 		8928E420198B3F3700C482B2 /* vi-VN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "vi-VN"; path = "vi-VN.lproj/Localizable_full.strings"; sourceTree = "<group>"; };
 		8928E423198B3F5500C482B2 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
 		8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
+		8938FD03198BE73B00F83B42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
 		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
 		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 		89DEE12C1973DB7E00E905A5 /* CloudStorageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CloudStorageTests-Info.plist"; sourceTree = "<group>"; };
 		89DEE12E1973DB7E00E905A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudStorageTests.m; sourceTree = "<group>"; };
+		89E7B96A1993E7EE001B4E88 /* CSManagerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSManagerAccount.h; sourceTree = "<group>"; };
+		89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSManagerAccount.m; sourceTree = "<group>"; };
 		89FE645E1980342B00156FD9 /* CSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFirstViewController.h; path = ViewController/FiveMainViewController/CSFirstViewController.h; sourceTree = "<group>"; };
 		89FE645F1980342B00156FD9 /* CSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFirstViewController.m; path = ViewController/FiveMainViewController/CSFirstViewController.m; sourceTree = "<group>"; };
 		89FE64601980342B00156FD9 /* CSFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFirstViewController.xib; path = ViewController/FiveMainViewController/CSFirstViewController.xib; sourceTree = "<group>"; };
@@ -261,6 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8938FD04198BE73B00F83B42 /* QuartzCore.framework in Frameworks */,
 				89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */,
 				89432CB71973EA97000ABB30 /* Security.framework in Frameworks */,
 				89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */,
@@ -483,6 +489,7 @@
 		89DEE10A1973DB7E00E905A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8938FD03198BE73B00F83B42 /* QuartzCore.framework */,
 				89C1F039197E9D55007A695B /* DropboxSDK.framework */,
 				89432CB61973EA97000ABB30 /* Security.framework */,
 				89432CB41973EA87000ABB30 /* CoreData.framework */,
@@ -500,6 +507,7 @@
 				89432C6A1973DD72000ABB30 /* Compoinents */,
 				89432C6B1973DD83000ABB30 /* Constants */,
 				8928E409198B3E8400C482B2 /* Libraries */,
+				89E7B9691993E7EE001B4E88 /* Managers */,
 				89432C691973DD66000ABB30 /* Models */,
 				89432C671973DD28000ABB30 /* ViewController */,
 			);
@@ -536,6 +544,15 @@
 				89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89E7B9691993E7EE001B4E88 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				89E7B96A1993E7EE001B4E88 /* CSManagerAccount.h */,
+				89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		89FE649D1980351200156FD9 /* MainTabController */ = {
@@ -747,6 +764,7 @@
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
 				89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */,
 				89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */,
+				89E7B96C1993E7EE001B4E88 /* CSManagerAccount.m in Sources */,
 				89FE64711980342B00156FD9 /* CSFourViewController.m in Sources */,
 				89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */,
 				89FE64A61980351200156FD9 /* CSMainViewController.m in Sources */,

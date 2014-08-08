@@ -41,6 +41,7 @@
 		if ([[DBSession sharedSession] isLinked]) {
             // link to account dropbox successfull
             [_mainController.controller1 actionWhenDidLinkToDrobox];
+            [_mainController.controller5 reloadDropboxLinking];
 		}
 		return YES;
 	}

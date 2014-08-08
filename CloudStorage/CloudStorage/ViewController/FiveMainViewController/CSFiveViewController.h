@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DropboxSDK/DropboxSDK.h>
 
-@interface CSFiveViewController : UIViewController
+@interface CSFiveViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DBRestClientDelegate> {
+    DBRestClient            *_restClient;
+    BOOL                    _isDropboxLinked;
+}
+
+@property (strong, nonatomic) IBOutlet UITableView *tbvSetting;
+
+- (void)reloadDropboxLinking;
 
 @end

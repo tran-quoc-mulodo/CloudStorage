@@ -45,7 +45,7 @@
 }
 
 - (void)dealloc {
-    searchDisplayController = nil;
+    
 }
 
 #pragma mark - Table view data source
