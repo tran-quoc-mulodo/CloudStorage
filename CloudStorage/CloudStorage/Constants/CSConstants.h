@@ -34,7 +34,11 @@ typedef enum {
 #define kCSShareApptoFacebook               @"Share CloudStorage to Facebook!"
 #define kCSShareApptoTwitter                @"Share CloudStorage to Twitter!"
 #define kCSEmail                            @"Email"
+#define kCSName                             @"Name"
 #define kCSSpaceUsed                        @"Space Used"
+
+// key of Notification
+#define kCSNotificationDropboxUnlink        @"kNotificationCenter_DropboxUnlink"
 
 // Singleton
 #define kCSAppDelegate                  (CSAppDelegate*)[[UIApplication sharedApplication] delegate]
@@ -44,10 +48,15 @@ typedef enum {
 // Color
 #define kCSNavigationBackgroundColor [UIColor colorWithRed:37.0f/255.0f green:135.0f/255.0f blue:193.0f/255.0f alpha:1.0]
 #define kCSSearchBarBackgroundColor [UIColor colorWithRed:237.0f/255.0f green:237.0f/255.0f blue:237.0f/255.0f alpha:0.5]
+#define kCSButtonTitleColor [UIColor colorWithRed:0 green:0.478431 blue:1.0 alpha:1.0]
 
+// For alert and action sheet
+#define kCSSignOutTitle                     @"Sign Out"
+#define kCSSignOutMessage                   @"This action will remove all files from this iPhone. Are you sure?"
 
 // Constants
 #define kCSTitleCancel                      @"Cancel"
+#define kCSTitleOk                          @"OK"
 #define kCSTitleTab1                        @"Dropbox"
 #define kCSTitleTab2                        @"Box"
 #define kCSTitleTab3                        @"Google Drive"

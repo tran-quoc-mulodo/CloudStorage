@@ -39,7 +39,7 @@
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
 	if ([[DBSession sharedSession] handleOpenURL:url]) {
 		if ([[DBSession sharedSession] isLinked]) {
-            // link to account dropbox successfull
+            // observer when dropbox linked
             [_mainController.controller1 actionWhenDidLinkToDrobox];
             [_mainController.controller5 reloadDropboxLinking];
 		}

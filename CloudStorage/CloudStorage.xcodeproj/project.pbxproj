@@ -58,6 +58,7 @@
 		8928E422198B3F3700C482B2 /* Localizable_full.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8928E41D198B3F3700C482B2 /* Localizable_full.strings */; };
 		8928E425198B3F5500C482B2 /* NSDate+HumanizedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */; };
 		8938FD04198BE73B00F83B42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8938FD03198BE73B00F83B42 /* QuartzCore.framework */; };
+		893E5D3E199DE94D00F83DE2 /* CSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 893E5D3D199DE94D00F83DE2 /* CSUtils.m */; };
 		89432C711973DE3D000ABB30 /* CSMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C701973DE3D000ABB30 /* CSMainNavigationController.m */; };
 		89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C781973DE9B000ABB30 /* CSMainTabViewController.m */; };
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
@@ -183,6 +184,8 @@
 		8928E423198B3F5500C482B2 /* NSDate+HumanizedTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HumanizedTime.h"; sourceTree = "<group>"; };
 		8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HumanizedTime.m"; sourceTree = "<group>"; };
 		8938FD03198BE73B00F83B42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		893E5D3C199DE94D00F83DE2 /* CSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUtils.h; sourceTree = "<group>"; };
+		893E5D3D199DE94D00F83DE2 /* CSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUtils.m; sourceTree = "<group>"; };
 		89432C6C1973DDC4000ABB30 /* CSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSConstants.h; path = Constants/CSConstants.h; sourceTree = "<group>"; };
 		89432C6F1973DE3D000ABB30 /* CSMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSMainNavigationController.h; path = Compoinents/CSMainNavigationController.h; sourceTree = "<group>"; };
 		89432C701973DE3D000ABB30 /* CSMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSMainNavigationController.m; path = Compoinents/CSMainNavigationController.m; sourceTree = "<group>"; };
@@ -306,6 +309,15 @@
 				8928E424198B3F5500C482B2 /* NSDate+HumanizedTime.m */,
 			);
 			path = HumanizedTime;
+			sourceTree = "<group>";
+		};
+		893E5D3B199DE94D00F83DE2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				893E5D3C199DE94D00F83DE2 /* CSUtils.h */,
+				893E5D3D199DE94D00F83DE2 /* CSUtils.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		89432C671973DD28000ABB30 /* ViewController */ = {
@@ -509,6 +521,7 @@
 				8928E409198B3E8400C482B2 /* Libraries */,
 				89E7B9691993E7EE001B4E88 /* Managers */,
 				89432C691973DD66000ABB30 /* Models */,
+				893E5D3B199DE94D00F83DE2 /* Utilities */,
 				89432C671973DD28000ABB30 /* ViewController */,
 			);
 			path = CloudStorage;
@@ -754,6 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89FE646F1980342B00156FD9 /* CSFiveViewController.m in Sources */,
+				893E5D3E199DE94D00F83DE2 /* CSUtils.m in Sources */,
 				89D44BAC198A452F00081321 /* CSMainTableCell.m in Sources */,
 				89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */,
 				89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */,

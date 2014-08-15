@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <DropboxSDK/DropboxSDK.h>
 
-@interface CSFiveViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, DBRestClientDelegate> {
+@interface CSFiveViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate, DBRestClientDelegate> {
+    
+    // Dropbox
     DBRestClient            *_restClient;
+    DBAccountInfo           *_restAccountInfo;
     BOOL                    _isDropboxLinked;
+    BOOL                    _isDropboxLoadedData;
+    BOOL                    _flagPercentText;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *tbvSetting;

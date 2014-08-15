@@ -14,6 +14,7 @@
 @interface CSFirstViewController : UIViewController
 
 - (void)actionWhenDidLinkToDrobox;
+- (void)configView;
 
 @property (nonatomic, strong) CSRootDropboxTableViewController *rootViewDropbox;
 

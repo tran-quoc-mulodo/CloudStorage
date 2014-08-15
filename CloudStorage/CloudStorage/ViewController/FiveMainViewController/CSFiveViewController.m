@@ -8,6 +8,8 @@
 
 #import "CSFiveViewController.h"
 
+#define kAlertLogoutDropboxTag      100
+
 @interface CSFiveViewController ()
 
 @end
@@ -43,23 +45,29 @@
 - (void)dealloc {
     _tbvSetting = nil;
     _restClient = nil;
+    _restAccountInfo = nil;
 }
 
 #pragma mark -
 #pragma mark reload data by observer methods
 
-- (void)prepareDateForTableView {
-    
-    [self.tbvSetting reloadData];
-}
-
 - (void)reloadDropboxLinking {
     if([[DBSession sharedSession] isLinked]) {
-        _restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
-        _restClient.delegate = self;
+        if (!_restClient) {
+            _restClient = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
+            _restClient.delegate = self;
+        }
+        _isDropboxLinked = YES;
         [_restClient loadAccountInfo];
+        [self.tbvSetting reloadData];
     } else {
         _isDropboxLinked = NO;
+        _restClient = nil;
+        _restAccountInfo = nil;
+        [self.tbvSetting reloadData];
+        // push notification to root dropbox viewcontroller
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCSNotificationDropboxUnlink
+                                                            object:nil];
     }
 }
 
@@ -73,11 +81,9 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     switch (section) {
         case 0:
-            if (_isDropboxLinked) {
+            if (_isDropboxLinked)
                 return 3;
-            } else {
                 return 1;
-            }
             break;
             
         case 1:
@@ -114,7 +120,6 @@
     // set default
     [cell setAccessoryType:UITableViewCellAccessoryNone];
     [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
-    [cell.textLabel setTextAlignment:NSTextAlignmentLeft];
     [cell.textLabel setTextColor:[UIColor blackColor]];
     [cell.detailTextLabel setText:nil];
     
@@ -126,12 +131,21 @@
             if (_isDropboxLinked) {
                 switch (indexPath.row) {
                     case 0: {
-                        [cell.textLabel setText:kCSEmail];
+                        if (_isDropboxLoadedData) {
+                            [cell.detailTextLabel setText:_restAccountInfo.displayName];
+                        }
+                        [cell.textLabel setText:kCSName];
+                        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
                         break;
                     }
                         
                     case 1: {
+                        if (_isDropboxLoadedData) {
+                            [cell.detailTextLabel setText:[CSUtils calculatorStringUsedSpaceDropbox:[_restAccountInfo quota].totalBytes andUsedValue:[_restAccountInfo quota].normalConsumedBytes]];
+                            _flagPercentText = YES;
+                        }
                         [cell.textLabel setText:kCSSpaceUsed];
+                        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
                         break;
                     }
                         
@@ -139,7 +153,6 @@
                     case 2: {
                         [cell.textLabel setText:kCSDroboxButtonUnLinkTitle];
                         [cell.textLabel setTextColor:[UIColor redColor]];
-                        [cell.textLabel setTextAlignment:NSTextAlignmentCenter];
                         break;
                     }
                         
@@ -148,7 +161,7 @@
                 }
             } else {
                 [cell.textLabel setText:kCSDroboxButtonLinkTitle];
-                [cell.textLabel setTextColor:[UIColor blueColor]];
+                [cell.textLabel setTextColor:kCSButtonTitleColor];
             }
             break;
         }
@@ -192,7 +205,6 @@
                     break;
             }
             
-            [cell.textLabel setTextAlignment:NSTextAlignmentLeft];
             break;
         }
             
@@ -204,7 +216,6 @@
             }
             
             [cell setAccessoryType:UITableViewCellAccessoryNone];
-            [cell.textLabel setTextAlignment:NSTextAlignmentCenter];
             break;
         }
             
@@ -258,18 +269,94 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.section) {
+        case 0: {
+            if (_isDropboxLinked && _isDropboxLoadedData && indexPath.row == 1) {
+                // change title of this cell
+                UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+                if (_flagPercentText) {
+                    [cell.detailTextLabel setText:[CSUtils calculatorStringPercentUsedSpaceDropbox:[_restAccountInfo quota].totalBytes andUsedValue:[_restAccountInfo quota].normalConsumedBytes]];
+                } else {
+                   [cell.detailTextLabel setText:[CSUtils calculatorStringUsedSpaceDropbox:[_restAccountInfo quota].totalBytes andUsedValue:[_restAccountInfo quota].normalConsumedBytes]]; 
+                }
+                _flagPercentText = !_flagPercentText;
+                
+            } else if (_isDropboxLinked && indexPath.row == 2) {
+                UIAlertView *alertConfirm = [[UIAlertView alloc] initWithTitle:kCSSignOutTitle
+                                                                       message:kCSSignOutMessage
+                                                                      delegate:self
+                                                             cancelButtonTitle:kCSTitleCancel
+                                                             otherButtonTitles:kCSSignOutTitle, nil];
+                [alertConfirm setTag:kAlertLogoutDropboxTag];
+                [alertConfirm show];
+            } else if (!_isDropboxLinked){
+                [[DBSession sharedSession] linkFromController:self];
+            }
+            break;
+        }
+            
+        case 1: {
+            
+            break;
+        }
+            
+        case 2: {
+            
+            break;
+        }
+            
+        case 3: {
+            
+            break;
+        }
+            
+        case 4: {
+            
+            break;
+        }
+            
+        case 6: {
+            
+            break;
+        }
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark -
 #pragma mark delege restClients reponse methods
 
 - (void)restClient:(DBRestClient*)client loadedAccountInfo:(DBAccountInfo*)info {
-    _isDropboxLinked = YES;
+    _isDropboxLoadedData = YES;
+    if (_restAccountInfo) {
+        _restAccountInfo = nil;
+    }
+    _restAccountInfo = info;
     [self.tbvSetting reloadData];
 }
 
 - (void)restClient:(DBRestClient*)client loadAccountInfoFailedWithError:(NSError*)error {
     
+}
+
+#pragma mark -
+#pragma mark UIAlertView delegate methods
+// Called when a button is clicked. The view will be automatically dismissed after this call returns
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (alertView.tag) {
+        case kAlertLogoutDropboxTag: {
+            if (buttonIndex != alertView.cancelButtonIndex) {
+                [[DBSession sharedSession] unlinkAll];
+                [self reloadDropboxLinking];
+            }
+            break;
+        }
+            
+        default:
+            break;
+    }
 }
 
 @end

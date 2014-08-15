@@ -55,6 +55,12 @@
     
     // check internet then load from local or load from server directly
     [self loadTreesFolderOfDropboxWithPath];
+    
+    // add observer
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(unlinkObserverMethod:)
+                                                 name:kCSNotificationDropboxUnlink
+                                               object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -74,10 +80,16 @@
     _path = nil;
     _searchBar = nil;
     searchDisplayController = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kCSNotificationDropboxUnlink object:nil];
 }
 
 #pragma mark -
 #pragma mark delege restClients reponse methods
+
+- (void)unlinkObserverMethod:(NSNotification*)notification {
+    // delete all data then pop to root viewcontroller
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
 
 // load metadata
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
