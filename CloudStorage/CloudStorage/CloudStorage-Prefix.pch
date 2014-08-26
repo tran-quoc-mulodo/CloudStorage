@@ -16,6 +16,7 @@
     #import "CSConstants.h"
     #import "CSManagerAccount.h"
     #import "CSUtils.h"
+    #import <CoreData/CoreData.h>
 
     #ifdef DEBUG
     #define DEBUG_LOG(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)

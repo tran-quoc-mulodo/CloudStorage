@@ -7,6 +7,7 @@
 //
 
 #import "CSRootDropboxTableViewController.h"
+#import "CSAppDelegate.h"
 
 
 @interface CSRootDropboxTableViewController ()
@@ -54,6 +55,7 @@
     }
     
     // check internet then load from local or load from server directly
+    [self loadDataFromtCoreData];
     [self loadTreesFolderOfDropboxWithPath];
     
     // add observer
@@ -65,7 +67,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    _flagStopLoad = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    _flagStopLoad = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,6 +81,22 @@
 }
 
 - (void)dealloc {
+    // cancel request before dealloc
+    if (_isSearchMode) {
+        for (DBMetadata *file in _metaDataContentSearch) {
+            if (file.thumbnailExists) {
+                [_restClient cancelThumbnailLoad:file.path size:kCSDroboxThumbnailSize];
+            }
+        }
+    } else {
+        for (DBMetadata *file in _metaDataContent) {
+            if (file.thumbnailExists) {
+                [_restClient cancelThumbnailLoad:file.path size:kCSDroboxThumbnailSize];
+            }
+        }
+    }
+    [_restClient cancelAllRequests];
+    
     [_searchBar removeFromSuperview];
     _restClient = nil;
     _metaDataContent = nil;
@@ -95,23 +118,8 @@
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
     if (metadata.isDirectory) {
         _metaDataContent = metadata.contents;
-        [self.tableView reloadData];
-        [self configTitleOfView];
-        for (DBMetadata *file in metadata.contents) {
-            if (file.isDirectory) {
-                _numberFolder++;
-            } else {
-                _numberFile++;
-            }
-            if (file.thumbnailExists) {
-                NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
-                [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
-            }
-        }
-        
-        // add footer couter item
-        [self updateFooterOfTableView];
-        [self.tableView reloadData];
+        [self reloadTableViewWhenDataLoaded];
+        [self saveDataIntoCoreData:metadata];
     }
 }
 
@@ -121,9 +129,8 @@
 }
 
 // load thumbnail
-- (void)restClient:(DBRestClient*)client loadedThumbnail:(NSString*)destPath metadata:(DBMetadata*)metadata {
+- (void)restClient:(DBRestClient*)client loadedThumbnail:(NSString*)destPath {
     // insert image at this desPath into coredata then remove in Directory
-    
     [self.tableView reloadData];
 }
 
@@ -143,7 +150,7 @@
         }
         if (file.thumbnailExists) {
             NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
-            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
+            [_restClient loadThumbnail:file.path ofSize:kCSDroboxThumbnailSize intoPath:destinationPath];
         }
     }
     
@@ -160,9 +167,59 @@
 #pragma mark -
 #pragma mark files and folders methods
 
+- (void)loadDataFromtCoreData {
+    NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:kCSEntityDropbox
+                inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(path = %@)", _path];
+    [request setPredicate:pred];
+    NSManagedObject *matches = nil;
+    
+    NSError *error;
+    NSArray *objects = [context executeFetchRequest:request
+                                              error:&error];
+    if ([objects count] != 0) {
+        matches = objects[0];
+        _metaDataContent = [matches valueForKey:kCSDropboxMetaData];
+        [self reloadTableViewWhenDataLoaded];
+    }
+}
+
+- (void)saveDataIntoCoreData:(DBMetadata *)metadata {
+    NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
+    NSManagedObject *metaData = [NSEntityDescription insertNewObjectForEntityForName:kCSEntityDropbox inManagedObjectContext:context];
+    [metaData setValue:metadata.path forKey:kCSDropboxPath];
+    [metaData setValue:metadata.contents forKey:kCSDropboxMetaData];
+    NSError *error;
+    [context save:&error];
+}
+
 - (void)actionBarButtonItem:(id)sender {
     
     
+}
+
+- (void)reloadTableViewWhenDataLoaded {
+    [self.tableView reloadData];
+    [self configTitleOfView];
+    for (DBMetadata *file in _metaDataContent) {
+        if (file.isDirectory) {
+            _numberFolder++;
+        } else {
+            _numberFile++;
+        }
+        
+        if (file.thumbnailExists && !_flagStopLoad) {
+            NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
+            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
+        }
+    }
+    
+    // add footer couter item
+    [self updateFooterOfTableView];
+    [self.tableView reloadData];
 }
 
 - (NSString *)returnNameMainPath {

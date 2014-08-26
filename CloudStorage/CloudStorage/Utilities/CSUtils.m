@@ -7,8 +7,13 @@
 //
 
 #import "CSUtils.h"
+#import "CSReachability.h"
 
 @implementation CSUtils
+
++ (BOOL)checkNetWorkIsConnect {
+    return ISCONNECTINGNETWORK;
+}
 
 + (NSString *)calculatorFromByteToOther:(long long)value {
     int multiplyFactor = 0;

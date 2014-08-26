@@ -10,6 +10,8 @@
 
 @interface CSUtils : NSObject
 
+// network
++ (BOOL)checkNetWorkIsConnect;
 
 // Util for Dropbox
 + (NSString *)calculatorFromByteToOther:(long long)byte;

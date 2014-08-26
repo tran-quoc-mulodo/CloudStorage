@@ -15,6 +15,7 @@
     NSArray                 *_metaDataContent;
     NSArray                 *_metaDataContentSearch;
     BOOL                    _isRoot;
+    BOOL                    _flagStopLoad;
     NSInteger               _numberFile;
     NSInteger               _numberFolder;
     NSInteger               _numberFileSearch;

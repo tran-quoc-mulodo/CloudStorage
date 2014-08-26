@@ -64,6 +64,7 @@
 		89432C7D1973DEB7000ABB30 /* CSBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */; };
 		89432CB51973EA87000ABB30 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB41973EA87000ABB30 /* CoreData.framework */; };
 		89432CB71973EA97000ABB30 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89432CB61973EA97000ABB30 /* Security.framework */; };
+		894AB7A019A487FA0014DFE2 /* Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 894AB79E19A487FA0014DFE2 /* Core_Data.xcdatamodeld */; };
 		89C1F03A197E9D55007A695B /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C1F039197E9D55007A695B /* DropboxSDK.framework */; };
 		89C62FAB1987D18D00557DBF /* btn-bar-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F901987D18D00557DBF /* btn-bar-button.png */; };
 		89C62FAD1987D18D00557DBF /* tabbar-box-default.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 89C62F921987D18D00557DBF /* tabbar-box-default.png.png */; };
@@ -103,6 +104,7 @@
 		89DEE12F1973DB7E00E905A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89DEE12D1973DB7E00E905A5 /* InfoPlist.strings */; };
 		89DEE1311973DB7E00E905A5 /* CloudStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */; };
 		89E7B96C1993E7EE001B4E88 /* CSManagerAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */; };
+		89FD379E19AC3BAF00D0CDC5 /* CSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FD379D19AC3BAF00D0CDC5 /* CSReachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		89FE646D1980342B00156FD9 /* CSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE645F1980342B00156FD9 /* CSFirstViewController.m */; };
 		89FE646E1980342B00156FD9 /* CSFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE64601980342B00156FD9 /* CSFirstViewController.xib */; };
 		89FE646F1980342B00156FD9 /* CSFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE64621980342B00156FD9 /* CSFiveViewController.m */; };
@@ -195,6 +197,7 @@
 		89432C7B1973DEB7000ABB30 /* CSBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSBaseTableViewController.m; path = Compoinents/CSBaseTableViewController.m; sourceTree = "<group>"; };
 		89432CB41973EA87000ABB30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		89432CB61973EA97000ABB30 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		894AB79F19A487FA0014DFE2 /* Core_Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data.xcdatamodel; sourceTree = "<group>"; };
 		89C1F039197E9D55007A695B /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		89C62F901987D18D00557DBF /* btn-bar-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-bar-button.png"; sourceTree = "<group>"; };
 		89C62F921987D18D00557DBF /* tabbar-box-default.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-box-default.png.png"; sourceTree = "<group>"; };
@@ -240,6 +243,8 @@
 		89DEE1301973DB7E00E905A5 /* CloudStorageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudStorageTests.m; sourceTree = "<group>"; };
 		89E7B96A1993E7EE001B4E88 /* CSManagerAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSManagerAccount.h; sourceTree = "<group>"; };
 		89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSManagerAccount.m; sourceTree = "<group>"; };
+		89FD379C19AC3BAF00D0CDC5 /* CSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSReachability.h; path = Reachability/CSReachability.h; sourceTree = "<group>"; };
+		89FD379D19AC3BAF00D0CDC5 /* CSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSReachability.m; path = Reachability/CSReachability.m; sourceTree = "<group>"; };
 		89FE645E1980342B00156FD9 /* CSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CSFirstViewController.h; path = ViewController/FiveMainViewController/CSFirstViewController.h; sourceTree = "<group>"; };
 		89FE645F1980342B00156FD9 /* CSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CSFirstViewController.m; path = ViewController/FiveMainViewController/CSFirstViewController.m; sourceTree = "<group>"; };
 		89FE64601980342B00156FD9 /* CSFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CSFirstViewController.xib; path = ViewController/FiveMainViewController/CSFirstViewController.xib; sourceTree = "<group>"; };
@@ -295,6 +300,7 @@
 		8928E409198B3E8400C482B2 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				89FD379819AC393600D0CDC5 /* Reachability */,
 				8928E41A198B3F3700C482B2 /* HumanizedTime */,
 			);
 			path = Libraries;
@@ -328,13 +334,6 @@
 				89FE649D1980351200156FD9 /* MainTabController */,
 			);
 			name = ViewController;
-			sourceTree = "<group>";
-		};
-		89432C691973DD66000ABB30 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		89432C6A1973DD72000ABB30 /* Compoinents */ = {
@@ -381,6 +380,13 @@
 				89FE646C1980342B00156FD9 /* CSThirdViewController.xib */,
 			);
 			name = FiveMainViewController;
+			sourceTree = "<group>";
+		};
+		89A4EDD119A49B2600463096 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		89C62F8E1987D18D00557DBF /* Images */ = {
@@ -480,11 +486,12 @@
 			isa = PBXGroup;
 			children = (
 				89DEE1111973DB7E00E905A5 /* CloudStorage */,
+				894AB79E19A487FA0014DFE2 /* Core_Data.xcdatamodeld */,
 				89DEE11A1973DB7E00E905A5 /* CSAppDelegate.h */,
 				89DEE11B1973DB7E00E905A5 /* CSAppDelegate.m */,
-				89DEE1121973DB7E00E905A5 /* Supporting Files */,
 				89DEE12A1973DB7E00E905A5 /* CloudStorageTests */,
 				89DEE10A1973DB7E00E905A5 /* Frameworks */,
+				89DEE1121973DB7E00E905A5 /* Supporting Files */,
 				89DEE1091973DB7E00E905A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -516,11 +523,11 @@
 		89DEE1111973DB7E00E905A5 /* CloudStorage */ = {
 			isa = PBXGroup;
 			children = (
+				89A4EDD119A49B2600463096 /* Models */,
 				89432C6A1973DD72000ABB30 /* Compoinents */,
 				89432C6B1973DD83000ABB30 /* Constants */,
 				8928E409198B3E8400C482B2 /* Libraries */,
 				89E7B9691993E7EE001B4E88 /* Managers */,
-				89432C691973DD66000ABB30 /* Models */,
 				893E5D3B199DE94D00F83DE2 /* Utilities */,
 				89432C671973DD28000ABB30 /* ViewController */,
 			);
@@ -566,6 +573,15 @@
 				89E7B96B1993E7EE001B4E88 /* CSManagerAccount.m */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		89FD379819AC393600D0CDC5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				89FD379C19AC3BAF00D0CDC5 /* CSReachability.h */,
+				89FD379D19AC3BAF00D0CDC5 /* CSReachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 		89FE649D1980351200156FD9 /* MainTabController */ = {
@@ -774,11 +790,13 @@
 				89FE64731980342B00156FD9 /* CSSecondViewController.m in Sources */,
 				8928E425198B3F5500C482B2 /* NSDate+HumanizedTime.m in Sources */,
 				89DEE11C1973DB7E00E905A5 /* CSAppDelegate.m in Sources */,
+				894AB7A019A487FA0014DFE2 /* Core_Data.xcdatamodeld in Sources */,
 				89FE64B61980361B00156FD9 /* CSRootDropboxTableViewController.m in Sources */,
 				89DEE1181973DB7E00E905A5 /* main.m in Sources */,
 				89FE64751980342B00156FD9 /* CSThirdViewController.m in Sources */,
 				89FE64A41980351200156FD9 /* CSLoginViewController.m in Sources */,
 				89E7B96C1993E7EE001B4E88 /* CSManagerAccount.m in Sources */,
+				89FD379E19AC3BAF00D0CDC5 /* CSReachability.m in Sources */,
 				89FE64711980342B00156FD9 /* CSFourViewController.m in Sources */,
 				89432C791973DE9B000ABB30 /* CSMainTabViewController.m in Sources */,
 				89FE64A61980351200156FD9 /* CSMainViewController.m in Sources */,
@@ -1023,6 +1041,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		894AB79E19A487FA0014DFE2 /* Core_Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				894AB79F19A487FA0014DFE2 /* Core_Data.xcdatamodel */,
+			);
+			currentVersion = 894AB79F19A487FA0014DFE2 /* Core_Data.xcdatamodel */;
+			path = Core_Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 89DEE1001973DB7E00E905A5 /* Project object */;
 }

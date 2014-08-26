@@ -11,6 +11,9 @@ typedef enum {
     StatusLogout = 1
 } StatusLoginType;
 
+// net work
+#define ISCONNECTINGNETWORK	(([[CSReachability reachabilityForInternetConnection] currentReachabilityStatus]!=NotReachable)||([[CSReachability reachabilityForLocalWiFi] currentReachabilityStatus]!=NotReachable))
+
 // Drobox constants
 #define kCSDroboxAppKey                     @"hmj6fernx13fv4a"
 #define kCSDroboxAppSecret                  @"hc5dk9yccs2782v"
@@ -23,6 +26,7 @@ typedef enum {
 #define kCSDroboxPlaceHolderSearchFolder    @"Search this Folder"
 #define kCSDroboxButtonLinkTitle            @"Link to Dropbox"
 #define kCSDroboxButtonUnLinkTitle          @"Unlink this account"
+#define kCSDroboxThumbnailSize              @"32x32"
 
 // Message Setting
 #define kCSNumberVersion                    @"1.0"
@@ -39,6 +43,13 @@ typedef enum {
 
 // key of Notification
 #define kCSNotificationDropboxUnlink        @"kNotificationCenter_DropboxUnlink"
+
+// key Entity Core Data
+#define kCSEntityDropbox                    @"DropboxEntity"
+
+// key Attribute Core Data
+#define kCSDropboxPath                      @"path"
+#define kCSDropboxMetaData                  @"metaData"
 
 // Singleton
 #define kCSAppDelegate                  (CSAppDelegate*)[[UIApplication sharedApplication] delegate]
