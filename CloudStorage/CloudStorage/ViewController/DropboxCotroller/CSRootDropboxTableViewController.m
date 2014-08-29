@@ -56,7 +56,9 @@
     
     // check internet then load from local or load from server directly
     [self loadDataFromtCoreData];
-    [self loadTreesFolderOfDropboxWithPath];
+    if ([CSUtils checkNetWorkIsConnect]) {
+        [self loadTreesFolderOfDropboxWithPath];
+    }
     
     // add observer
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -81,22 +83,7 @@
 }
 
 - (void)dealloc {
-    // cancel request before dealloc
-    if (_isSearchMode) {
-        for (DBMetadata *file in _metaDataContentSearch) {
-            if (file.thumbnailExists) {
-                [_restClient cancelThumbnailLoad:file.path size:kCSDroboxThumbnailSize];
-            }
-        }
-    } else {
-        for (DBMetadata *file in _metaDataContent) {
-            if (file.thumbnailExists) {
-                [_restClient cancelThumbnailLoad:file.path size:kCSDroboxThumbnailSize];
-            }
-        }
-    }
     [_restClient cancelAllRequests];
-    
     [_searchBar removeFromSuperview];
     _restClient = nil;
     _metaDataContent = nil;
@@ -114,7 +101,6 @@
     [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
-// load metadata
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
     if (metadata.isDirectory) {
         _metaDataContent = metadata.contents;
@@ -128,9 +114,9 @@
     
 }
 
-// load thumbnail
 - (void)restClient:(DBRestClient*)client loadedThumbnail:(NSString*)destPath {
     // insert image at this desPath into coredata then remove in Directory
+    [self saveThumbnailIntoCoreData:destPath];
     [self.tableView reloadData];
 }
 
@@ -138,7 +124,6 @@
     
 }
 
-// search
 - (void)restClient:(DBRestClient*)restClient loadedSearchResults:(NSArray*)results
            forPath:(NSString*)path keyword:(NSString*)keyword {
     _metaDataContentSearch = results;
@@ -155,22 +140,20 @@
     }
     
     [searchDisplayController.searchResultsTableView reloadData];
-    // add footer couter item
     [self updateFooterOfTableView];
 }
-// results is a list of DBMetadata * objects
+
 - (void)restClient:(DBRestClient*)restClient searchFailedWithError:(NSError*)error {
     
 }
 
-
 #pragma mark -
-#pragma mark files and folders methods
+#pragma mark core data methods
 
 - (void)loadDataFromtCoreData {
     NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:kCSEntityDropbox
-                inManagedObjectContext:context];
+                                                  inManagedObjectContext:context];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"(path = %@)", _path];
@@ -196,30 +179,57 @@
     [context save:&error];
 }
 
+- (UIImage *)loadThumbnailFromCoreData:(NSString *)fileName {
+    NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:kCSEntityImagesDropbox
+                                                  inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDesc];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(fileName = %@)", fileName];
+    [request setPredicate:pred];
+    NSManagedObject *matches = nil;
+    
+    NSError *error;
+    NSArray *objects = [context executeFetchRequest:request
+                                              error:&error];
+    
+    if ([objects count] != 0) {
+        matches = objects[0];
+        UIImage *thumbnail = [matches valueForKey:kCSDropboxImageData];
+        return thumbnail;
+    }
+    
+    return nil;
+}
+
+- (void)saveThumbnailIntoCoreData:(NSString *)destPath {
+    NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
+    NSManagedObject *metaData = [NSEntityDescription insertNewObjectForEntityForName:kCSEntityImagesDropbox inManagedObjectContext:context];
+    
+    NSArray *listStrings = [destPath componentsSeparatedByString:@"/"];
+    NSString *fileName = [listStrings objectAtIndex:[listStrings count] - 1];
+    UIImage *image_icon = [UIImage imageWithContentsOfFile:destPath];
+    
+    [metaData setValue:fileName forKey:kCSDropboxFileName];
+    [metaData setValue:image_icon forKey:kCSDropboxImageData];
+    NSError *error;
+    [context save:&error];
+    
+    [self removeFileByName:destPath];
+}
+
+- (void)removeFileByName:(NSString *)filePath {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error;
+    [fileManager removeItemAtPath:filePath error:&error];    
+}
+
+#pragma mark -
+#pragma mark private methods
+
 - (void)actionBarButtonItem:(id)sender {
     
     
-}
-
-- (void)reloadTableViewWhenDataLoaded {
-    [self.tableView reloadData];
-    [self configTitleOfView];
-    for (DBMetadata *file in _metaDataContent) {
-        if (file.isDirectory) {
-            _numberFolder++;
-        } else {
-            _numberFile++;
-        }
-        
-        if (file.thumbnailExists && !_flagStopLoad) {
-            NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
-            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
-        }
-    }
-    
-    // add footer couter item
-    [self updateFooterOfTableView];
-    [self.tableView reloadData];
 }
 
 - (NSString *)returnNameMainPath {
@@ -233,6 +243,27 @@
     }
     
     return [_path substringFromIndex:value];
+}
+
+- (void)reloadTableViewWhenDataLoaded {
+    [self.tableView reloadData];
+    [self configTitleOfView];
+    for (DBMetadata *file in _metaDataContent) {
+        if (file.isDirectory) {
+            _numberFolder++;
+        } else {
+            _numberFile++;
+        }
+        
+        if (file.thumbnailExists && !_flagStopLoad && [CSUtils checkNetWorkIsConnect]) {
+            NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
+            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
+        }
+    }
+    
+    // add footer couter item
+    [self updateFooterOfTableView];
+    [self.tableView reloadData];
 }
 
 - (void)updateFooterOfTableView {
@@ -322,11 +353,11 @@
     }
     
     if (file.thumbnailExists) {
-        [cell.imageView setImage:[UIImage imageNamed:@"page_white_picture.png"]];
-        NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
-        UIImage *image_icon = [UIImage imageWithContentsOfFile:destinationPath];
-        if (image_icon) {
-            [cell.imageView setImage:image_icon];
+        NSString *fileName = [NSString stringWithFormat:@"thumbnail_%@", file.filename];
+        if ([self loadThumbnailFromCoreData:fileName]) {
+            [cell.imageView setImage:[self loadThumbnailFromCoreData:fileName]];
+        } else {
+            [cell.imageView setImage:[UIImage imageNamed:@"page_white_picture.png"]];
         }
     } else {
         [cell.imageView setImage:[UIImage imageNamed:file.icon]];
@@ -371,6 +402,9 @@
     }
 }
 
+#pragma mark -
+#pragma mark search bar methods
+
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     if (searchString.length == 0) {
         [controller.searchResultsTableView reloadData];
@@ -382,6 +416,7 @@
         [self.tableView reloadData];
     } else {
         _isSearchMode = YES;
+        [_restClient cancelAllRequests];
         [self loadSearchByPath:_path andSearchString:searchString];
     }
     return YES;

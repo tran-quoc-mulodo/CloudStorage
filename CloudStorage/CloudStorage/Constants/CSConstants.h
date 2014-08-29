@@ -46,10 +46,13 @@ typedef enum {
 
 // key Entity Core Data
 #define kCSEntityDropbox                    @"DropboxEntity"
+#define kCSEntityImagesDropbox              @"DropboxImageEntity"
 
 // key Attribute Core Data
 #define kCSDropboxPath                      @"path"
 #define kCSDropboxMetaData                  @"metaData"
+#define kCSDropboxFileName                  @"fileName"
+#define kCSDropboxImageData                 @"imageData"
 
 // Singleton
 #define kCSAppDelegate                  (CSAppDelegate*)[[UIApplication sharedApplication] delegate]
