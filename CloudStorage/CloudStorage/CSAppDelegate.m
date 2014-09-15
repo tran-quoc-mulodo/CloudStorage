@@ -29,6 +29,7 @@
     [DBRequest setNetworkRequestDelegate:self];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     // Override point for customization after application launch.
     
     self.loginCotroller = [[CSLoginViewController alloc] initWithNibName:@"CSLoginViewController" bundle:nil];

@@ -36,10 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
-}
-
 - (IBAction)btnLoginAction:(id)sender {
     [kCSAppDelegate changeRootViewController:StatusLogin];
 }

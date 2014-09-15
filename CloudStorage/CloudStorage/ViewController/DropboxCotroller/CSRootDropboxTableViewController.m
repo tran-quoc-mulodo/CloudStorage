@@ -8,6 +8,7 @@
 
 #import "CSRootDropboxTableViewController.h"
 #import "CSAppDelegate.h"
+#import "CSMainViewController.h"
 
 
 @interface CSRootDropboxTableViewController ()
@@ -91,6 +92,7 @@
     _searchBar = nil;
     searchDisplayController = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kCSNotificationDropboxUnlink object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name: kCSNotificationDropboxLoadedThumbnail object:nil];
 }
 
 #pragma mark -
@@ -99,6 +101,20 @@
 - (void)unlinkObserverMethod:(NSNotification*)notification {
     // delete all data then pop to root viewcontroller
     [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
+- (void)thumbnailLoaded:(NSNotification *)notification {
+    [self.tableView reloadData];
+    _numberThumbnailCount--;
+    if (_numberThumbnailCount == 0) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kCSNotificationDropboxLoadedThumbnail object:nil];
+    }
+}
+
+- (void)loadThumbnailWithFilePath:(NSString *)path andDesPath:(NSString *)destinationPath {
+    if (_isRoot) {
+        [_restClient loadThumbnail:path ofSize:kCSDroboxThumbnailSize intoPath:destinationPath];
+    }
 }
 
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
@@ -116,12 +132,16 @@
 
 - (void)restClient:(DBRestClient*)client loadedThumbnail:(NSString*)destPath {
     // insert image at this desPath into coredata then remove in Directory
-    [self saveThumbnailIntoCoreData:destPath];
-    [self.tableView reloadData];
+    if (_isRoot) {
+        [self saveThumbnailIntoCoreData:destPath];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCSNotificationDropboxLoadedThumbnail object:nil];
+    }
 }
 
 - (void)restClient:(DBRestClient*)client loadThumbnailFailedWithError:(NSError*)error {
-    
+    if (_isRoot) {
+        _numberThumbnailCount--;
+    }
 }
 
 - (void)restClient:(DBRestClient*)restClient loadedSearchResults:(NSArray*)results
@@ -133,8 +153,10 @@
         } else {
             _numberFileSearch++;
         }
-        if (file.thumbnailExists) {
+        if (file.thumbnailExists && [CSUtils checkNetWorkIsConnect]) {
+            // send request loadthumbnail into root view
             NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
+            
             [_restClient loadThumbnail:file.path ofSize:kCSDroboxThumbnailSize intoPath:destinationPath];
         }
     }
@@ -248,6 +270,10 @@
 - (void)reloadTableViewWhenDataLoaded {
     [self.tableView reloadData];
     [self configTitleOfView];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(thumbnailLoaded:)
+                                                 name:kCSNotificationDropboxLoadedThumbnail
+                                               object:nil];
     for (DBMetadata *file in _metaDataContent) {
         if (file.isDirectory) {
             _numberFolder++;
@@ -256,12 +282,16 @@
         }
         
         if (file.thumbnailExists && !_flagStopLoad && [CSUtils checkNetWorkIsConnect]) {
+            // send request loadthumbnail into root view
+            _numberThumbnailCount++;
             NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"thumbnail_%@", file.filename]];
-            [_restClient loadThumbnail:file.path ofSize:@"32x32" intoPath:destinationPath];
+            [[[[kCSAppDelegate mainController] controller1] rootViewDropbox] loadThumbnailWithFilePath:file.path andDesPath:destinationPath];
         }
     }
     
-    // add footer couter item
+    if (_numberThumbnailCount <= 0) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name: kCSNotificationDropboxLoadedThumbnail object:nil];
+    }
     [self updateFooterOfTableView];
     [self.tableView reloadData];
 }
@@ -368,12 +398,13 @@
         [cell.detailTextLabel setFont:[UIFont systemFontOfSize:11.0f]];
         NSString *stringOfDate = [file.lastModifiedDate stringWithHumanizedTimeDifference:_humanizedType withFullString:YES];
         [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@ modified %@", file.humanReadableSize, stringOfDate]];
+        [cell.textLabel setFont:[UIFont systemFontOfSize:14.0f]];
     } else {
         [cell.detailTextLabel setText:nil];
+        [cell.textLabel setFont:[UIFont boldSystemFontOfSize:14.0f]];
     }
     
     [cell.textLabel setLineBreakMode:NSLineBreakByTruncatingMiddle];
-    [cell.textLabel setFont:[UIFont systemFontOfSize:14.0f]];
     [cell.textLabel setText:file.filename];
     
     

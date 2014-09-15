@@ -20,10 +20,13 @@
     NSInteger               _numberFolder;
     NSInteger               _numberFileSearch;
     NSInteger               _numberFolderSearch;
+    NSInteger               _numberThumbnailCount;
     NSDateHumanizedType     _humanizedType;
 }
 
 @property (nonatomic, strong) NSString *path;
 @property (nonatomic, assign) BOOL  isRoot;
+
+- (void)loadThumbnailWithFilePath:(NSString *)path andDesPath:(NSString *)destinationPath;
 
 @end

@@ -43,6 +43,7 @@ typedef enum {
 
 // key of Notification
 #define kCSNotificationDropboxUnlink        @"kNotificationCenter_DropboxUnlink"
+#define kCSNotificationDropboxLoadedThumbnail        @"kNotificationCenter_Dropbox_Loaded_Thumbnail"
 
 // key Entity Core Data
 #define kCSEntityDropbox                    @"DropboxEntity"

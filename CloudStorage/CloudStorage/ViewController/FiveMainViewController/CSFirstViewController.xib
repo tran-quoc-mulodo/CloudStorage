@@ -12,7 +12,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="welcome-branding.png" id="ert-7u-FHX">
@@ -20,8 +20,8 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zpu-Sm-5l8">
-                    <rect key="frame" x="68" y="394" width="185" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <rect key="frame" x="68" y="342" width="185" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <color key="tintColor" red="0.011764707040000001" green="0.77647066119999997" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                     <state key="normal" title="Link to Dropbox">
@@ -37,7 +37,7 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>

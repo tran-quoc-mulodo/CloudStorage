@@ -937,6 +937,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/luongcamminh/Documents/ProjectiOS/TestiOS/CloudStorage,
@@ -946,6 +948,8 @@
 				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -955,6 +959,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/luongcamminh/Documents/ProjectiOS/TestiOS/CloudStorage,
@@ -964,6 +970,8 @@
 				INFOPLIST_FILE = "CloudStorage/CloudStorage-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -973,6 +981,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -986,6 +995,7 @@
 				);
 				INFOPLIST_FILE = "CloudStorageTests/CloudStorageTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -996,6 +1006,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1005,6 +1016,7 @@
 				GCC_PREFIX_HEADER = "CloudStorage/CloudStorage-Prefix.pch";
 				INFOPLIST_FILE = "CloudStorageTests/CloudStorageTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};

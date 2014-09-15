@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <DropboxSDK/DropboxSDK.h>
 
-@interface CSManagerAccount : NSObject  {
+@interface CSManagerAccount : NSObject <DBRestClientDelegate>  {
     
 }
 
