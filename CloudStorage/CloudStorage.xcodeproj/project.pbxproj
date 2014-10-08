@@ -651,9 +651,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CS;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = anhquoc;
 				TargetAttributes = {
+					89DEE1071973DB7E00E905A5 = {
+						DevelopmentTeam = Y86M9Q9U52;
+					};
 					89DEE1221973DB7E00E905A5 = {
 						TestTargetID = 89DEE1071973DB7E00E905A5;
 					};
@@ -864,7 +867,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -903,7 +905,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -950,6 +951,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bbea6f77-0830-421a-a5dd-6559990ee684";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -972,6 +974,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "bbea6f77-0830-421a-a5dd-6559990ee684";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "bbea6f77-0830-421a-a5dd-6559990ee684";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -979,7 +982,6 @@
 		89DEE1381973DB7E00E905A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1004,7 +1006,6 @@
 		89DEE1391973DB7E00E905A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CloudStorage.app/CloudStorage";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Cong Pham (43LWMUUJ23)";
 				FRAMEWORK_SEARCH_PATHS = (
