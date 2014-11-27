@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CC22801040B0B51A6671268EB6A55BAF202C310E</key>
-		<string>ssh://github.com/tran-quoc-mulodo/CloudStorage.git</string>
+		<string>github.com:tran-quoc-mulodo/CloudStorage.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CloudStorage/CloudStorage.xcodeproj/project.xcworkspace</string>
+	<string>CloudStorage/CloudStorage.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CC22801040B0B51A6671268EB6A55BAF202C310E</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/tran-quoc-mulodo/CloudStorage.git</string>
+	<string>github.com:tran-quoc-mulodo/CloudStorage.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

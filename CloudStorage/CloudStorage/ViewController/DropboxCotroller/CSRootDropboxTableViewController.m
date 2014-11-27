@@ -86,6 +86,7 @@
 - (void)dealloc {
     [_restClient cancelAllRequests];
     [_searchBar removeFromSuperview];
+    [self removeAllFileFromTempFolder];
     _restClient = nil;
     _metaDataContent = nil;
     _path = nil;
@@ -113,6 +114,9 @@
 
 - (void)loadThumbnailWithFilePath:(NSString *)path andDesPath:(NSString *)destinationPath {
     if (_isRoot) {
+        NSString *fileName = [self getFileNameFromTempPath:destinationPath];
+        if([self checkfileExistsInTempFolder:fileName])
+            [self removeFileByFilePath:destinationPath];
         [_restClient loadThumbnail:path ofSize:kCSDroboxThumbnailSize intoPath:destinationPath];
     }
 }
@@ -202,6 +206,9 @@
 }
 
 - (UIImage *)loadThumbnailFromCoreData:(NSString *)fileName {
+    if ([self checkfileExistsInTempFolder:fileName])
+        return [self loadImageFromTempFolder:fileName];
+
     NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:kCSEntityImagesDropbox
                                                   inManagedObjectContext:context];
@@ -218,32 +225,64 @@
     if ([objects count] != 0) {
         matches = objects[0];
         UIImage *thumbnail = [matches valueForKey:kCSDropboxImageData];
+        [self convertImageDataToLocalFile:thumbnail andFileName:fileName];
         return thumbnail;
     }
     
-    return nil;
+    return [UIImage imageNamed:@"page_white_picture.png"];
 }
 
 - (void)saveThumbnailIntoCoreData:(NSString *)destPath {
     NSManagedObjectContext *context = [kCSAppDelegate managedObjectContext];
     NSManagedObject *metaData = [NSEntityDescription insertNewObjectForEntityForName:kCSEntityImagesDropbox inManagedObjectContext:context];
     
-    NSArray *listStrings = [destPath componentsSeparatedByString:@"/"];
-    NSString *fileName = [listStrings objectAtIndex:[listStrings count] - 1];
+    NSString *fileName = [self getFileNameFromTempPath:destPath];
     UIImage *image_icon = [UIImage imageWithContentsOfFile:destPath];
     
     [metaData setValue:fileName forKey:kCSDropboxFileName];
     [metaData setValue:image_icon forKey:kCSDropboxImageData];
     NSError *error;
     [context save:&error];
-    
-    [self removeFileByName:destPath];
 }
 
-- (void)removeFileByName:(NSString *)filePath {
+#pragma mark -
+#pragma mark manager files
+
+- (NSString *)getFileNameFromTempPath:(NSString *)destPath {
+    NSArray *listStrings = [destPath componentsSeparatedByString:@"/"];
+    return [listStrings objectAtIndex:[listStrings count] - 1];
+}
+
+- (void)removeFileByFilePath:(NSString *)filePath {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     [fileManager removeItemAtPath:filePath error:&error];    
+}
+
+- (void)removeAllFileFromTempFolder {
+    NSArray* tmpDirectory = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:NSTemporaryDirectory() error:NULL];
+    for (NSString *file in tmpDirectory) {
+        if ([self checkfileExistsInTempFolder:file]) {
+            [[NSFileManager defaultManager] removeItemAtPath:[NSString stringWithFormat:@"%@%@", NSTemporaryDirectory(), file] error:NULL];
+        }
+    }
+}
+
+- (void)convertImageDataToLocalFile:(UIImage *)image andFileName:(NSString *)fileName {
+    NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
+    [UIImagePNGRepresentation(image) writeToFile:destinationPath atomically:YES];
+}
+
+- (BOOL)checkfileExistsInTempFolder:(NSString *)fileName {
+    NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
+    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:destinationPath];
+    return fileExists;
+}
+
+- (UIImage *)loadImageFromTempFolder:(NSString *)fileName {
+    NSString *destinationPath = [NSTemporaryDirectory() stringByAppendingPathComponent:fileName];
+    UIImage *img = [UIImage imageWithContentsOfFile:destinationPath];
+    return img;
 }
 
 #pragma mark -
@@ -383,11 +422,7 @@
     
     if (file.thumbnailExists) {
         NSString *fileName = [NSString stringWithFormat:@"thumbnail_%@", file.filename];
-        if ([self loadThumbnailFromCoreData:fileName]) {
-            [cell.imageView setImage:[self loadThumbnailFromCoreData:fileName]];
-        } else {
-            [cell.imageView setImage:[UIImage imageNamed:@"page_white_picture.png"]];
-        }
+        [cell.imageView setImage:[self loadThumbnailFromCoreData:fileName]];
     } else {
         [cell.imageView setImage:[UIImage imageNamed:file.icon]];
     }
